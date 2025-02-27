@@ -1,8 +1,5 @@
 #include "Core/Scripting/HelperClasses/ClassFunctionsResolver_API_Implementations.h"
 
-/*
-#include "Core/Scripting/APIModules/EmuAPI.h"
-
 #include "Core/Scripting/EventCallbackRegistrationAPIs/OnFrameStartCallbackAPI.h"
 #include "Core/Scripting/EventCallbackRegistrationAPIs/OnGCControllerPolledCallbackAPI.h"
 #include "Core/Scripting/EventCallbackRegistrationAPIs/OnInstructionHitCallbackAPI.h"
@@ -10,9 +7,9 @@
 #include "Core/Scripting/EventCallbackRegistrationAPIs/OnMemoryAddressWrittenToCallbackAPI.h"
 #include "Core/Scripting/EventCallbackRegistrationAPIs/OnWiiInputPolledCallbackAPI.h"
 
-
 #include "Core/Scripting/InternalAPIModules/BitAPI.h"
 #include "Core/Scripting/InternalAPIModules/ConfigAPI.h"
+#include "Core/Scripting/InternalAPIModules/EmuAPI.h"
 #include "Core/Scripting/InternalAPIModules/GameCubeControllerAPI.h"
 #include "Core/Scripting/InternalAPIModules/GraphicsAPI.h"
 #include "Core/Scripting/InternalAPIModules/ImportAPI.h"
@@ -20,7 +17,6 @@
 #include "Core/Scripting/InternalAPIModules/MemoryAPI.h"
 #include "Core/Scripting/InternalAPIModules/RegistersAPI.h"
 #include "Core/Scripting/InternalAPIModules/StatisticsAPI.h"
-*/
 
 namespace Scripting
 {
@@ -30,9 +26,6 @@ ClassMetadata GetClassMetadataForModule(const std::string& module_name,
 {
   if (module_name.empty() || version_number.empty())
     return {};
-  /*
-  if (module_name == EmuApi::class_name)
-    return EmuApi::GetClassMetadataForVersion(version_number);
 
   if (module_name == BitApi::class_name)
     return BitApi::GetClassMetadataForVersion(version_number);
@@ -40,6 +33,8 @@ ClassMetadata GetClassMetadataForModule(const std::string& module_name,
   else if (module_name == ConfigAPI::class_name)
     return ConfigAPI::GetClassMetadataForVersion(version_number);
 
+  else if (module_name == EmuApi::class_name)
+    return EmuApi::GetClassMetadataForVersion(version_number);
 
   else if (module_name == GameCubeControllerApi::class_name)
     return GameCubeControllerApi::GetClassMetadataForVersion(version_number);
@@ -80,8 +75,8 @@ ClassMetadata GetClassMetadataForModule(const std::string& module_name,
   else if (module_name == OnWiiInputPolledCallbackAPI::class_name)
     return OnWiiInputPolledCallbackAPI::GetClassMetadataForVersion(version_number);
 
-  else*/
-  return {};
+  else
+    return {};
 }
 
 FunctionMetadata GetFunctionMetadataForModuleFunctionAndVersion(const std::string& module_name,
