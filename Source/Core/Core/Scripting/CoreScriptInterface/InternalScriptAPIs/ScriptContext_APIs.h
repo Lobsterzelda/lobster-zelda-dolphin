@@ -212,11 +212,10 @@ typedef struct DLL_Defined_ScriptContext_APIs
   // running.
   void (*RegisterOnInstructionHitWithAutoDeregistrationCallback)(void*, unsigned int, void*);
 
-  // Unregisters/removes an OnInstructionHit callback (the 3rd parameter passed into the function
-  // should be the return result of RegisterOnInstructionHitCallback()) for the address specified by
-  // the 2nd parameter. Should return 1 if attempt to unregister succeded, and should return 0
-  // otherwise.
-  int (*UnregisterOnInstructionHitCallback)(void*, unsigned int, void*);
+  // Unregisters/removes an OnInstructionHit callback (the 2nd parameter passed into the function
+  // should be the return result of RegisterOnInstructionHitCallback()). Should return 1 if attempt
+  // to unregister succeded, and should return 0 otherwise.
+  int (*UnregisterOnInstructionHitCallback)(void*, void*);
 
   // Registers a new OnMemoryAddressReadFrom callback function (the 4th parameter passed into the
   // function) to run when a memory address which is >= the 2nd parameter to the function and <= the

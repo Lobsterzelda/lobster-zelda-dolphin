@@ -22,11 +22,12 @@ typedef struct FunctionMetadata_APIs
   // WARNING: All of these functions that return const char* have a return result that is only valid
   // until the FunctionMetadata* passed in as input goes out of scope.
   // --------------------------------------------------------------------------------------------
+
   // Takes an opaque handle for a FunctionMetadata* as input, and returns the function's name.
   const char* (*GetFunctionName)(void*);
 
-  // Takes an opaque handle for a FunctionMetadata* as input, and returns the version that the
-  // FunctionMetadata* was first defined in.
+  // Takes an opaque handle for a FunctionMetadata* as input, and returns the version of the
+  // FunctionMetadata*
   const char* (*GetFunctionVersion)(void*);
 
   // Takes an opaque handle for a FunctionMetadata* as input, and returns an example function call

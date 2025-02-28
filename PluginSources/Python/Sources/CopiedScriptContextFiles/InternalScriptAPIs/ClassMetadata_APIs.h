@@ -14,7 +14,7 @@ extern "C" {
 // the DLL_Defined_ScriptContext_APIs.DLLClassMetadataCopyHook function
 typedef struct ClassMetadata_APIs
 {
-  // WARNING: This function returns an exact copy of the name field of the ClassMetadata*, so it's
+  // WARNING: This function returns an exact copy of the name field of the ClassMetadata*, so its
   // lifespan will end when the ClassMetadata* that the function was called with goes out of scope
   // on the Dolphin side.
 

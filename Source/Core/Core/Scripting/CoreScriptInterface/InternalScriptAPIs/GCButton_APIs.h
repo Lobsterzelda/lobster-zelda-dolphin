@@ -20,16 +20,16 @@ typedef struct GCButton_APIs
   const char* (*ConvertButtonEnumToString)(int);
 
   // Returns 1 if the integer passed into it is a valid GCButtonNameEnum value, and returns 0
-  // otherwise (returns 0 when it encounters GCButtonNameEnum::UnknownButton, or any value not lised
-  // in the GCButtonNameEnum.h file)
+  // otherwise (returns 0 when it encounters GCButtonNameEnum::UnknownButton, or any value not
+  // listed in the GCButtonNameEnum.h file)
   int (*IsValidButtonEnum)(int);
 
-  // Returns 1 if the integer passed into it (representing a GCButtonNameEnum) represents a digital
-  // button, and returns 0 otherwise
+  // Returns 1 if the integer passed into it (representing a GCButtonNameEnum) represents a valid
+  // digital button, and returns 0 otherwise
   int (*IsDigitalButton)(int);
 
-  // Returns 1 if the integer passed into it (representing a GCButtonNameEnum) represents an analog
-  // button, and returns 0 otherwise
+  // Returns 1 if the integer passed into it (representing a GCButtonNameEnum) represents a valid
+  // analog button, and returns 0 otherwise
   int (*IsAnalogButton)(int);
 
 } GCButton_APIs;

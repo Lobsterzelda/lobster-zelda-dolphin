@@ -2,6 +2,7 @@
 
 namespace Scripting
 {
+
 #ifdef __cplusplus
 extern "C" {
 #endif
