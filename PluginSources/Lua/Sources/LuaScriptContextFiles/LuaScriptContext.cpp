@@ -1109,7 +1109,7 @@ namespace Scripting
     RegisterForMapHelper(address, lua_script_ptr->map_of_instruction_address_to_lua_callback_locations, callback, lua_script_ptr->number_of_instruction_address_callbacks_to_auto_deregister);
   }
 
-  int UnregisterOnInstructionReachedCallback_impl(void* base_script_context_ptr, unsigned int address, void* callback)
+  int UnregisterOnInstructionReachedCallback_impl(void* base_script_context_ptr, void* callback)
   {
     return UnregisterForMapHelper(getLuaScriptContext(base_script_context_ptr)->map_of_instruction_address_to_lua_callback_locations, callback);
   }

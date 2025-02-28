@@ -107,7 +107,7 @@ namespace Scripting
 
   void* RegisterOnInstructionReachedCallback_impl(void*, unsigned int, void*);
   void RegisterOnInstructionReachedWithAutoDeregistrationCallback_impl(void*, unsigned int, void*);
-  int UnregisterOnInstructionReachedCallback_impl(void*, unsigned int, void*);
+  int UnregisterOnInstructionReachedCallback_impl(void*, void*);
 
   void* RegisterOnMemoryAddressReadFromCallback_impl(void*, unsigned int, unsigned int, void*);
   void RegisterOnMemoryAddressReadFromWithAutoDeregistrationCallback_impl(void*, unsigned int, unsigned int, void*);

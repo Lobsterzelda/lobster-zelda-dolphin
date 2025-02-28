@@ -908,7 +908,7 @@ void RegisterOnInstructionReachedWithAutoDeregistrationCallback_impl(void* base_
   RegisterForMapWithAutoDeregistrationHelper(base_script_context_ptr, addr, python_script->map_of_instruction_address_to_python_callbacks, callback, python_script->number_of_instruction_address_callbacks_to_auto_deregister);
 }
 
-int UnregisterOnInstructionReachedCallback_impl(void* base_script_context_ptr, unsigned int addr, void* identifier_for_callback)
+int UnregisterOnInstructionReachedCallback_impl(void* base_script_context_ptr, void* identifier_for_callback)
 {
   return UnregisterForMapHelper(base_script_context_ptr, GetPythonScriptContext(base_script_context_ptr)->map_of_instruction_address_to_python_callbacks, identifier_for_callback);
 }

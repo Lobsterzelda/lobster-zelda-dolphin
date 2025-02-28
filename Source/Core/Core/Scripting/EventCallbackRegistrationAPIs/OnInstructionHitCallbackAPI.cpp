@@ -90,7 +90,7 @@ ArgHolder* Unregister(ScriptContext* current_script, std::vector<ArgHolder*>* ar
 
   bool return_value =
       current_script->dll_specific_api_definitions.UnregisterOnInstructionHitCallback(
-          current_script, address_of_breakpoint, callback);
+          current_script, callback);
 
   if (!return_value)
   {
