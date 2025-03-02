@@ -10,6 +10,7 @@
 // the APIs in FunctionMetadata_APIs
 namespace Scripting
 {
+
 class FunctionMetadata
 {
 public:

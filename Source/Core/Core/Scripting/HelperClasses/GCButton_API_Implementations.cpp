@@ -258,6 +258,7 @@ int IsDigitalButton_impl(int raw_button_val)
     return 0;
   }
 }
+
 int IsAnalogButton_impl(int raw_button_val)
 {
   GCButtonNameEnum button_name = static_cast<GCButtonNameEnum>(raw_button_val);
@@ -276,4 +277,5 @@ int IsAnalogButton_impl(int raw_button_val)
     return 0;
   }
 }
+
 }  // namespace Scripting
