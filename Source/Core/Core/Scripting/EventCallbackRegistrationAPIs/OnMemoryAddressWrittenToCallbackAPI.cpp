@@ -125,7 +125,7 @@ ArgHolder* Unregister(ScriptContext* current_script, std::vector<ArgHolder*>* ar
           memory_breakpoint_start_address))
   {
     return CreateErrorStringArgHolder(
-        "Error: Address passed into OnMemoryAddressWrittenTo:Unregister() did not represent a "
+        "Error: Address passed into OnMemoryAddressWrittenTo:unregister() did not represent a "
         "write breakpoint that was currently enabled!");
   }
 
@@ -139,8 +139,8 @@ ArgHolder* Unregister(ScriptContext* current_script, std::vector<ArgHolder*>* ar
   if (!return_value)
   {
     return CreateErrorStringArgHolder(
-        "2nd argument passed into OnMemoryAddressWrittenTo:unregister() was not a reference to a "
-        "function currently registered as an OnMemoryAddressWrittenTo callback!");
+        "2nd argument passed into OnMemoryAddressWrittenTo:unregister() was not a was not a "
+        "reference returned from calling OnMemoryAddressWrittenTo:register()");
   }
 
   else

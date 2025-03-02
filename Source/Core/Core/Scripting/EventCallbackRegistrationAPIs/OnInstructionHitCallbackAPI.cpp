@@ -82,7 +82,7 @@ ArgHolder* Unregister(ScriptContext* current_script, std::vector<ArgHolder*>* ar
   if (!current_script->instruction_breakpoints_holder.ContainsBreakpoint(address_of_breakpoint))
   {
     return CreateErrorStringArgHolder(
-        "Error: Address passed into OnInstructionHit:Unregister() did not correspond to any "
+        "Error: Address passed into OnInstructionHit:unregister() did not correspond to any "
         "breakpoint that was currently enabled!");
   }
 
@@ -95,8 +95,8 @@ ArgHolder* Unregister(ScriptContext* current_script, std::vector<ArgHolder*>* ar
   if (!return_value)
   {
     return CreateErrorStringArgHolder(
-        "Argument passed into OnInstructionHit:unregister() was not a reference to a function "
-        "currently registered as an OnInstructionHit callback!");
+        "Argument passed into OnInstructionHit:unregister() was not a reference returned from "
+        "calling OnInstructionHit:register()");
   }
 
   else

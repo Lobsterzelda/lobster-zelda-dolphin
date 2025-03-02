@@ -76,6 +76,7 @@ ArgHolder* Register(ScriptContext* current_script, std::vector<ArgHolder*>* args
 
   current_script->memory_address_breakpoints_holder.AddReadBreakpoint(
       memory_breakpoint_start_address, memory_breakpoint_end_address);
+
   return CreateRegistrationReturnTypeArgHolder(
       current_script->dll_specific_api_definitions.RegisterOnMemoryAddressReadFromCallback(
           current_script, memory_breakpoint_start_address, memory_breakpoint_end_address,
@@ -96,7 +97,7 @@ ArgHolder* RegisterWithAutoDeregistration(ScriptContext* current_script,
 
   else if (memory_breakpoint_start_address > memory_breakpoint_end_address)
   {
-    return CreateErrorStringArgHolder("Error: Memory address read breakpoint has ending address "
+    return CreateErrorStringArgHolder("Error: Memory address read breakpoint has an ending address "
                                       "less than its starting address!");
   }
 
@@ -106,6 +107,7 @@ ArgHolder* RegisterWithAutoDeregistration(ScriptContext* current_script,
   current_script->dll_specific_api_definitions
       .RegisterOnMemoryAddressReadFromWithAutoDeregistrationCallback(
           current_script, memory_breakpoint_start_address, memory_breakpoint_end_address, callback);
+
   return CreateVoidTypeArgHolder();
 }
 
@@ -118,7 +120,7 @@ ArgHolder* Unregister(ScriptContext* current_script, std::vector<ArgHolder*>* ar
           memory_breakpoint_start_address))
   {
     return CreateErrorStringArgHolder(
-        "Error: Address passed into OnMemoryAddressReadFrom:Unregister() did not represent the "
+        "Error: Address passed into OnMemoryAddressReadFrom:unregister() did not represent the "
         "start address of a read "
         "breakpoint that was currently enabled!");
   }
@@ -133,8 +135,8 @@ ArgHolder* Unregister(ScriptContext* current_script, std::vector<ArgHolder*>* ar
   if (!return_value)
   {
     return CreateErrorStringArgHolder(
-        "2nd Argument passed into OnMemoryAddressReadFrom:unregister() was not a reference to a "
-        "function currently registered as an OnMemoryAddressReadFrom callback!");
+        "2nd Argument passed into OnMemoryAddressReadFrom:unregister() was not a reference "
+        "returned from calling OnMemoryAddressReadFrom:register()");
   }
 
   else
