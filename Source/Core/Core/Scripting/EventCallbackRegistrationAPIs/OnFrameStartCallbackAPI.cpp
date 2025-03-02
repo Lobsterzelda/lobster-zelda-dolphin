@@ -66,7 +66,7 @@ ArgHolder* Unregister(ScriptContext* current_script, std::vector<ArgHolder*>* ar
   {
     return CreateErrorStringArgHolder(
         "Argument passed into OnFrameStart:unregister() was not a reference returned from calling "
-        "OnFrameStart:register()");
+        "OnFrameStart:register(), or unregister was called twice on the same reference");
   }
 
   else

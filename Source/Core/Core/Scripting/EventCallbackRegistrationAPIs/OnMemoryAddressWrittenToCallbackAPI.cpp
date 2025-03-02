@@ -140,7 +140,8 @@ ArgHolder* Unregister(ScriptContext* current_script, std::vector<ArgHolder*>* ar
   {
     return CreateErrorStringArgHolder(
         "2nd argument passed into OnMemoryAddressWrittenTo:unregister() was not a was not a "
-        "reference returned from calling OnMemoryAddressWrittenTo:register()");
+        "reference returned from calling OnMemoryAddressWrittenTo:register(), or unregister was "
+        "called twice on the same reference");
   }
 
   else

@@ -82,7 +82,8 @@ ArgHolder* Unregister(ScriptContext* current_script, std::vector<ArgHolder*>* ar
   {
     return CreateErrorStringArgHolder(
         "Argument passed into OnGCControllerPolled:unregister() was not a reference returned from "
-        "calling OnGCControllerPolled:register()");
+        "calling OnGCControllerPolled:register(), or unregister was called twice on the same "
+        "reference");
   }
 
   else

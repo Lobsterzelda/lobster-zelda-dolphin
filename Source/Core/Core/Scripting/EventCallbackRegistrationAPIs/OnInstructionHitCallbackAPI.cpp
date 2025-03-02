@@ -96,7 +96,8 @@ ArgHolder* Unregister(ScriptContext* current_script, std::vector<ArgHolder*>* ar
   {
     return CreateErrorStringArgHolder(
         "Argument passed into OnInstructionHit:unregister() was not a reference returned from "
-        "calling OnInstructionHit:register()");
+        "calling OnInstructionHit:register(), or unregister was called twice on the same "
+        "reference");
   }
 
   else
