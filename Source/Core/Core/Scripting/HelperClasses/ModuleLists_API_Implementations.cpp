@@ -39,8 +39,10 @@ const char* GetElementAtListIndex_impl(const void* input_list, unsigned long lon
 {
   return reinterpret_cast<const std::vector<const char*>*>(input_list)->at(index);
 }
+
 const char* GetImportModuleName_impl()
 {
   return import_module_name;
 }
+
 }  // namespace Scripting

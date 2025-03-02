@@ -10,6 +10,7 @@ namespace Scripting::GameCubeControllerApi
 {
 
 const char* class_name = "GameCubeControllerAPI";
+
 std::array<Movie::ControllerState, 4> controller_inputs_on_last_frame{};
 
 static std::array all_game_cube_controller_functions_metadata_list = {

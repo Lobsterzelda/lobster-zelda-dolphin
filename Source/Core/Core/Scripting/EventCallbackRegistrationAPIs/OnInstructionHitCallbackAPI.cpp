@@ -7,6 +7,7 @@ namespace Scripting::OnInstructionHitCallbackAPI
 {
 
 const char* class_name = "OnInstructionHit";
+
 u32 instruction_address_for_current_callback = 0;
 bool in_instruction_hit_breakpoint = false;
 

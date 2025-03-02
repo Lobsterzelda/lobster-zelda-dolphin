@@ -16,9 +16,10 @@
 namespace Scripting::GraphicsAPI
 {
 
+const char* class_name = "GraphicsAPI";
+
 std::stack<bool> display_stack = std::stack<bool>();
 bool window_is_open = false;
-const char* class_name = "GraphicsAPI";
 
 static std::deque<bool> all_checkboxes = std::deque<bool>();
 static std::map<long long, bool*> id_to_checkbox_map = std::map<long long, bool*>();
@@ -85,11 +86,10 @@ static std::array all_graphics_functions_metadata_list = {
                      {Scripting::ArgTypeEnum::ListOfPoints, Scripting::ArgTypeEnum::Float,
                       Scripting::ArgTypeEnum::String}),
 
-    FunctionMetadata(
-        "drawFilledPolygon", "1.0",
-        "drawFilledPolygon({ {45.0, 100.0}, {45.0, 500.0}, {67.4, 54.2}}, color)",
-        DrawFilledPolygon, Scripting::ArgTypeEnum::VoidType,
-        {Scripting::ArgTypeEnum::ListOfPoints, Scripting::ArgTypeEnum::String}),
+    FunctionMetadata("drawFilledPolygon", "1.0",
+                     "drawFilledPolygon({ {45.0, 100.0}, {45.0, 500.0}, {67.4, 54.2}}, color)",
+                     DrawFilledPolygon, Scripting::ArgTypeEnum::VoidType,
+                     {Scripting::ArgTypeEnum::ListOfPoints, Scripting::ArgTypeEnum::String}),
 
     FunctionMetadata("drawText", "1.0", "drawText(30.0, 45.0, colorString, \"Hello World!\")",
                      DrawText, Scripting::ArgTypeEnum::VoidType,
@@ -107,10 +107,10 @@ static std::array all_graphics_functions_metadata_list = {
 
     FunctionMetadata("addRadioButtonGroup", "1.0", "addRadioButtonGroup(42)", AddRadioButtonGroup,
                      Scripting::ArgTypeEnum::VoidType, {Scripting::ArgTypeEnum::S64}),
-    FunctionMetadata("addRadioButton", "1.0", "addRadioButton(\"apples\", 42, 0)", AddRadioButton,
-                     Scripting::ArgTypeEnum::VoidType,
-                     {Scripting::ArgTypeEnum::String, Scripting::ArgTypeEnum::S64,
-                      Scripting::ArgTypeEnum::S64}),
+    FunctionMetadata(
+        "addRadioButton", "1.0", "addRadioButton(\"apples\", 42, 0)", AddRadioButton,
+        Scripting::ArgTypeEnum::VoidType,
+        {Scripting::ArgTypeEnum::String, Scripting::ArgTypeEnum::S64, Scripting::ArgTypeEnum::S64}),
     FunctionMetadata("getRadioButtonGroupValue", "1.0", "getRadioButtonGroupValue((42)",
                      GetRadioButtonGroupValue, Scripting::ArgTypeEnum::S64,
                      {Scripting::ArgTypeEnum::S64}),
@@ -136,13 +136,13 @@ static std::array all_graphics_functions_metadata_list = {
     FunctionMetadata("pressButton", "1.0", "pressButton(42)", PressButton,
                      Scripting::ArgTypeEnum::VoidType, {Scripting::ArgTypeEnum::S64}),
 
-    FunctionMetadata("newLine", "1.0", "newLine(10.0)", NewLine,
-                     Scripting::ArgTypeEnum::VoidType, {Scripting::ArgTypeEnum::Float}),
+    FunctionMetadata("newLine", "1.0", "newLine(10.0)", NewLine, Scripting::ArgTypeEnum::VoidType,
+                     {Scripting::ArgTypeEnum::Float}),
 
     FunctionMetadata("beginWindow", "1.0", "beginWindow(windowName)", BeginWindow,
                      Scripting::ArgTypeEnum::VoidType, {Scripting::ArgTypeEnum::String}),
-    FunctionMetadata("endWindow", "1.0", "endWindow()", EndWindow,
-                     Scripting::ArgTypeEnum::VoidType, {})};
+    FunctionMetadata("endWindow", "1.0", "endWindow()", EndWindow, Scripting::ArgTypeEnum::VoidType,
+                     {})};
 
 u32 ParseColor(const char* color_string)
 {
