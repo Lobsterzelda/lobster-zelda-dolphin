@@ -253,6 +253,7 @@ void SetGameCubeControllerStateArgHolderValue_API_impl(void* input_arg_holder_pt
     return;
   }
 }
+
 int GetGameCubeControllerStateArgHolderValue_API_impl(void* input_arg_holder_ptr,
                                                       int gc_button_name)
 {

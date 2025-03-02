@@ -48,7 +48,7 @@ struct ArgHolder
 // DeleteArgHolder function or the VectorOfArgHolders_APIs Delete_VectorOfArgHolders function need
 // to be called on the ArgHolder* at some point to prevent a memory leak from happening.
 
-// (however, only one of those can be invoked on the ArgHolder* - calling both would cause a double
+// (However, only one of those can be invoked on the ArgHolder* - calling both would cause a double
 // delete!)
 
 ArgHolder* CreateEmptyOptionalArgument();

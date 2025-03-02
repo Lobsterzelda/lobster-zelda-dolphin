@@ -20,7 +20,7 @@
 
 namespace Scripting
 {
-// TODO: Uncomment out other classes once they get added back in.
+
 ClassMetadata GetClassMetadataForModule(const std::string& module_name,
                                         const std::string& version_number)
 {

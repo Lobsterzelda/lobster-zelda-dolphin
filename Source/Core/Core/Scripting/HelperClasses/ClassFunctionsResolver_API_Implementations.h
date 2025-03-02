@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+
 #include "Core/Scripting/HelperClasses/ClassMetadata.h"
 
 // This file contains the implementations for the APIs in ClassFunctionsResolver_APIs
