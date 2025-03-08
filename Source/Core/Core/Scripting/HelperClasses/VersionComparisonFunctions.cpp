@@ -3,6 +3,33 @@
 namespace Scripting
 {
 
+// This helper function parses/returns the next sequence of numbers in the input_string, starting at
+// the specified starting_position Each number in the input_string is treated as ending when a
+// period or the end of the string is encountered (whichever happens first).
+std::string GetNextNumber(const std::string& input_string, const size_t starting_position)
+{
+  size_t string_length = input_string.length();
+  if (string_length == 0 || starting_position >= string_length)
+    return "";
+
+  size_t index_of_char_after_end_of_number = std::string::npos;
+
+  for (size_t i = starting_position; i < string_length; ++i)
+  {
+    if (input_string[i] == '.')
+    {
+      index_of_char_after_end_of_number = i;
+      break;
+    }
+  }
+
+  if (index_of_char_after_end_of_number == std::string::npos)
+    index_of_char_after_end_of_number = string_length;
+
+  return input_string.substr(starting_position,
+                             index_of_char_after_end_of_number - starting_position);
+}
+
 // This helper function returns -1 if firstVersion < secondVersion, 0 if firstVersion ==
 // secondVersion, and 1 if firstVersion > secondVersion
 int CompareFirstVersionToSecondVersion(std::string first_version, std::string second_version)
@@ -35,36 +62,13 @@ int CompareFirstVersionToSecondVersion(std::string first_version, std::string se
 
   while (index_of_next_digit_in_first_version < first_version.length())
   {
-    std::string next_number_in_first_version;
-    std::string next_number_in_second_version;
+    std::string next_number_in_first_version =
+        GetNextNumber(first_version, index_of_next_digit_in_first_version);
+    index_of_next_digit_in_first_version += (next_number_in_first_version.length() + 1);
 
-    size_t index_of_next_period_in_first_version =
-        first_version.find('.', index_of_next_digit_in_first_version);
-    if (index_of_next_period_in_first_version == std::string::npos)
-    {
-      next_number_in_first_version = first_version.substr(index_of_next_digit_in_first_version);
-      index_of_next_digit_in_first_version = first_version.length();
-    }
-    else
-    {
-      next_number_in_first_version = first_version.substr(index_of_next_digit_in_first_version,
-                                                          index_of_next_period_in_first_version);
-      index_of_next_digit_in_first_version = index_of_next_period_in_first_version + 1;
-    }
-
-    size_t index_of_next_period_in_second_version =
-        second_version.find('.', index_of_next_digit_in_second_version);
-    if (index_of_next_period_in_second_version == std::string::npos)
-    {
-      next_number_in_second_version = second_version.substr(index_of_next_digit_in_second_version);
-      index_of_next_digit_in_second_version = second_version.length();
-    }
-    else
-    {
-      next_number_in_second_version = second_version.substr(index_of_next_digit_in_second_version,
-                                                            index_of_next_period_in_second_version);
-      index_of_next_digit_in_second_version = index_of_next_period_in_second_version + 1;
-    }
+    std::string next_number_in_second_version =
+        GetNextNumber(second_version, index_of_next_digit_in_second_version);
+    index_of_next_digit_in_second_version += (next_number_in_second_version.length() + 1);
 
     int first_number = std::stoi(next_number_in_first_version);
     int second_number = std::stoi(next_number_in_second_version);
