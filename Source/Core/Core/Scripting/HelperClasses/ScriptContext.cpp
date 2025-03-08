@@ -39,6 +39,7 @@ void* ScriptContext_Initializer_impl(int unique_identifier, const char* script_f
 
   return *((void**)&ret_val);
 }
+
 void ScriptContext_Destructor_impl(void* script_context)
 {
   ScriptContext* casted_script_ptr = CastToScriptContextPtr(script_context);
