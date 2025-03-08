@@ -4,7 +4,7 @@ namespace Scripting
 {
 
 // This helper function parses/returns the next sequence of numbers in the input_string, starting at
-// the specified starting_position Each number in the input_string is treated as ending when a
+// the specified starting_position. Each number in the input_string is treated as ending when a
 // period or the end of the string is encountered (whichever happens first).
 std::string GetNextNumber(const std::string& input_string, const size_t starting_position)
 {
