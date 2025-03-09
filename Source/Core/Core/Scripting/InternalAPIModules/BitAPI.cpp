@@ -119,14 +119,19 @@ ArgHolder* BitShiftLeft(ScriptContext* current_script, std::vector<ArgHolder*>* 
 {
   s64 first_val = (*args_list)[0]->s64_val;
   s64 second_val = (*args_list)[1]->s64_val;
+
   if (first_val < 0)
+  {
     return CreateErrorStringArgHolder(
         "First argument passed into bit_shift_left() was negative. Both "
         "arguments to the function must be positive!");
+  }
   else if (second_val < 0)
+  {
     return CreateErrorStringArgHolder(
         "Second argument passed into bit_shift_left() was negative. Both "
         "arguments to the function must be positive!");
+  }
 
   return CreateS64ArgHolder(
       static_cast<s64>(static_cast<u64>(first_val) << static_cast<u64>(second_val)));
@@ -138,13 +143,17 @@ ArgHolder* BitShiftRight(ScriptContext* current_script, std::vector<ArgHolder*>*
   s64 second_val = (*args_list)[1]->s64_val;
 
   if (first_val < 0)
+  {
     return CreateErrorStringArgHolder(
         "First argument passed into bit_shift_right() was negative. Both "
         "arguments to the function must be positive!");
+  }
   else if (second_val < 0)
+  {
     return CreateErrorStringArgHolder(
         "Second argument passed into bit_shift_right() was negative. Both "
         "arguments to the function must be positive!");
+  }
 
   return CreateS64ArgHolder(
       static_cast<s64>(static_cast<u64>(first_val) >> static_cast<u64>(second_val)));
