@@ -24,15 +24,15 @@ static std::array all_bit_functions_metadata_list = {
                      {Scripting::ArgTypeEnum::S64, Scripting::ArgTypeEnum::S64}),
     FunctionMetadata("logical_and", "1.0", "logical_and(true, false)", LogicalAnd,
                      Scripting::ArgTypeEnum::Boolean,
-                     {Scripting::ArgTypeEnum::S64, Scripting::ArgTypeEnum::S64}),
+                     {Scripting::ArgTypeEnum::Boolean, Scripting::ArgTypeEnum::Boolean}),
     FunctionMetadata("logical_or", "1.0", "logical_or(true, false)", LogicalOr,
                      Scripting::ArgTypeEnum::Boolean,
-                     {Scripting::ArgTypeEnum::S64, Scripting::ArgTypeEnum::S64}),
+                     {Scripting::ArgTypeEnum::Boolean, Scripting::ArgTypeEnum::Boolean}),
     FunctionMetadata("logical_xor", "1.0", "logical_xor(true, false)", LogicalXor,
                      Scripting::ArgTypeEnum::Boolean,
-                     {Scripting::ArgTypeEnum::S64, Scripting::ArgTypeEnum::S64}),
+                     {Scripting::ArgTypeEnum::Boolean, Scripting::ArgTypeEnum::Boolean}),
     FunctionMetadata("logical_not", "1.0", "logical_not(true)", LogicalNot,
-                     Scripting::ArgTypeEnum::Boolean, {Scripting::ArgTypeEnum::S64}),
+                     Scripting::ArgTypeEnum::Boolean, {Scripting::ArgTypeEnum::Boolean}),
     FunctionMetadata("bit_shift_left", "1.0", "bit_shift_left(3, 6)", BitShiftLeft,
                      Scripting::ArgTypeEnum::S64,
                      {Scripting::ArgTypeEnum::S64, Scripting::ArgTypeEnum::S64}),
@@ -90,28 +90,28 @@ ArgHolder* BitwiseXor(ScriptContext* current_script, std::vector<ArgHolder*>* ar
 
 ArgHolder* LogicalAnd(ScriptContext* current_script, std::vector<ArgHolder*>* args_list)
 {
-  s64 first_val = (*args_list)[0]->s64_val;
-  s64 second_val = (*args_list)[1]->s64_val;
+  bool first_val = (*args_list)[0]->bool_val;
+  bool second_val = (*args_list)[1]->bool_val;
   return CreateBoolArgHolder(first_val && second_val);
 }
 
 ArgHolder* LogicalOr(ScriptContext* current_script, std::vector<ArgHolder*>* args_list)
 {
-  s64 first_val = (*args_list)[0]->s64_val;
-  s64 second_val = (*args_list)[1]->s64_val;
+  bool first_val = (*args_list)[0]->bool_val;
+  bool second_val = (*args_list)[1]->bool_val;
   return CreateBoolArgHolder(first_val || second_val);
 }
 
 ArgHolder* LogicalXor(ScriptContext* current_script, std::vector<ArgHolder*>* args_list)
 {
-  s64 first_val = (*args_list)[0]->s64_val;
-  s64 second_val = (*args_list)[1]->s64_val;
+  bool first_val = (*args_list)[0]->bool_val;
+  bool second_val = (*args_list)[1]->bool_val;
   return CreateBoolArgHolder((first_val || second_val) && !(first_val && second_val));
 }
 
 ArgHolder* LogicalNot(ScriptContext* current_script, std::vector<ArgHolder*>* args_list)
 {
-  s64 input_val = (*args_list)[0]->s64_val;
+  bool input_val = (*args_list)[0]->bool_val;
   return CreateBoolArgHolder(!input_val);
 }
 
@@ -120,11 +120,13 @@ ArgHolder* BitShiftLeft(ScriptContext* current_script, std::vector<ArgHolder*>* 
   s64 first_val = (*args_list)[0]->s64_val;
   s64 second_val = (*args_list)[1]->s64_val;
   if (first_val < 0)
-    return CreateErrorStringArgHolder("first argument passed into the function was negative. Both "
-                                      "arguments to the function must be positive!");
+    return CreateErrorStringArgHolder(
+        "First argument passed into bit_shift_left() was negative. Both "
+        "arguments to the function must be positive!");
   else if (second_val < 0)
-    return CreateErrorStringArgHolder("second argument passed into the function was negative. Both "
-                                      "arguments to the function must be positive!");
+    return CreateErrorStringArgHolder(
+        "Second argument passed into bit_shift_left() was negative. Both "
+        "arguments to the function must be positive!");
 
   return CreateS64ArgHolder(
       static_cast<s64>(static_cast<u64>(first_val) << static_cast<u64>(second_val)));
@@ -136,11 +138,13 @@ ArgHolder* BitShiftRight(ScriptContext* current_script, std::vector<ArgHolder*>*
   s64 second_val = (*args_list)[1]->s64_val;
 
   if (first_val < 0)
-    return CreateErrorStringArgHolder("first argument passed to the function was negative. Both "
-                                      "arguments to the function must be positive!");
+    return CreateErrorStringArgHolder(
+        "First argument passed into bit_shift_right() was negative. Both "
+        "arguments to the function must be positive!");
   else if (second_val < 0)
-    return CreateErrorStringArgHolder("second argument passed to the function was negative. Both "
-                                      "arguments to the function must be positive!");
+    return CreateErrorStringArgHolder(
+        "Second argument passed into bit_shift_right() was negative. Both "
+        "arguments to the function must be positive!");
 
   return CreateS64ArgHolder(
       static_cast<s64>(static_cast<u64>(first_val) >> static_cast<u64>(second_val)));
