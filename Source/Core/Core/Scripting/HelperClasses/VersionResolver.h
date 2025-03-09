@@ -1,15 +1,15 @@
+#include <array>
 #include <string>
 #include <unordered_map>
 #include <vector>
 
-#include <array>
 #include "Core/Scripting/HelperClasses/FunctionMetadata.h"
 #include "Core/Scripting/HelperClasses/VersionComparisonFunctions.h"
 
 namespace Scripting
 {
-// Since these are template functions, their definition has to be in the header file.
 
+// Since these are template functions, their definition has to be in the header file.
 template <size_t array_size>
 std::vector<FunctionMetadata>
 GetLatestFunctionsForVersion(const std::array<FunctionMetadata, array_size> all_functions,
@@ -28,19 +28,19 @@ GetLatestFunctionsForVersion(const std::array<FunctionMetadata, array_size> all_
   for (int i = 0; i < array_size; ++i)
   {
     std::string current_function_name = all_functions[i].function_name;
-    std::string function_version_number = all_functions[i].function_version;
+    std::string current_function_version_number = all_functions[i].function_version;
 
     if (function_to_latest_version_found_map.count(current_function_name) == 0 &&
-        !IsFirstVersionGreaterThanSecondVersion(function_version_number, api_version))
+        !IsFirstVersionGreaterThanSecondVersion(current_function_version_number, api_version))
     {
       function_to_latest_version_found_map[current_function_name] = all_functions[i];
     }
 
     else if (function_to_latest_version_found_map.count(current_function_name) > 0 &&
              IsFirstVersionGreaterThanSecondVersion(
-                 function_version_number,
+                 current_function_version_number,
                  function_to_latest_version_found_map[current_function_name].function_version) &&
-             !IsFirstVersionGreaterThanSecondVersion(function_version_number, api_version))
+             !IsFirstVersionGreaterThanSecondVersion(current_function_version_number, api_version))
     {
       function_to_latest_version_found_map[current_function_name] = all_functions[i];
     }
@@ -95,4 +95,5 @@ GetAllFunctions(const std::array<FunctionMetadata, array_size> all_functions)
 {
   return std::vector<FunctionMetadata>(&all_functions[0], &all_functions[0] + array_size);
 }
+
 }  // namespace Scripting
