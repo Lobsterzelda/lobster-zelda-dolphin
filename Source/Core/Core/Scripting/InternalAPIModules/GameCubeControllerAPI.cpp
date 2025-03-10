@@ -49,7 +49,7 @@ ArgHolder* GetInputsForPreviousFrame(ScriptContext* current_script,
   s64 controller_port_number = (*args_list)[0]->s64_val;
   if (controller_port_number < 1 || controller_port_number > 4)
   {
-    return CreateErrorStringArgHolder("controller port number was not between 1 and 4 !");
+    return CreateErrorStringArgHolder("Controller port number was outside the valid range of 1-4");
   }
 
   return CreateGameCubeControllerStateArgHolder(
@@ -61,7 +61,7 @@ ArgHolder* IsGcControllerInPort(ScriptContext* current_script, std::vector<ArgHo
   long long controller_port_number = (*args_list)[0]->s64_val;
 
   if (controller_port_number < 1 || controller_port_number > 4)
-    return CreateErrorStringArgHolder("controller port number was outside the valid range of 1-4");
+    return CreateErrorStringArgHolder("Controller port number was outside the valid range of 1-4");
 
   return CreateBoolArgHolder(
       Core::System::GetInstance().GetMovie().IsUsingGCController(controller_port_number - 1));
@@ -71,7 +71,7 @@ ArgHolder* IsUsingPort(ScriptContext* current_script, std::vector<ArgHolder*>* a
 {
   long long controller_port_number = (*args_list)[0]->s64_val;
   if (controller_port_number < 1 || controller_port_number > 4)
-    return CreateErrorStringArgHolder("controller port number was outside the valid range of 1-4");
+    return CreateErrorStringArgHolder("Controller port number was outside the valid range of 1-4");
 
   return CreateBoolArgHolder(
       Core::System::GetInstance().GetMovie().IsUsingPad(controller_port_number - 1));
