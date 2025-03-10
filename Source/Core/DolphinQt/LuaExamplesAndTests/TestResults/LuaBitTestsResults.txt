@@ -14,18 +14,18 @@ Test 3:
 PASS!
 
 Test 4:
-	Testing if bit:logical_and(113, 546) == 113 && 546:
-	true == true
+	Testing if bit:logical_and(true, false) == true && false:
+	false == false
 PASS!
 
 Test 5:
-	Testing if bit:logical_or(113, 546) == 113 || 546:
+	Testing if bit:logical_or(true, false) == true || false:
 	true == true
 PASS!
 
 Test 6:
-	Testing if bit:logical_xor(113, 546) == 113 XOR 546:
-	false == false
+	Testing if bit:logical_xor(true, false) == true XOR false:
+	true == true
 PASS!
 
 Test 7:
@@ -44,7 +44,7 @@ Test 9:
 PASS!
 
 Test 10:
-	Testing if bit:logical_not(113) == !113:
+	Testing if bit:logical_not(true) == !true:
 	false == false
 PASS!
 

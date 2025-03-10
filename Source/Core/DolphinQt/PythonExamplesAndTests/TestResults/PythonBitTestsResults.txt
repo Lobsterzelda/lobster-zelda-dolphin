@@ -45,9 +45,9 @@ PASS!
 
 Test 10:
 	Testing if bit.logical_not(113) == !113:
-	False == False
-PASS!
+	True != False
+FAILURE! Actual value did not equal expected value!
 
 Total Tests: 10
-	Tests Passed: 10
-	Tests Failed: 0
+	Tests Passed: 9
+	Tests Failed: 1
