@@ -4,11 +4,10 @@
 #include <fmt/format.h>
 #include <memory>
 #include <optional>
+
 #include "Core/Core.h"
 #include "Core/Movie.h"
 #include "Core/PowerPC/PowerPC.h"
-#include "Core/Scripting/HelperClasses/ClassMetadata.h"
-#include "Core/Scripting/HelperClasses/FunctionMetadata.h"
 #include "Core/Scripting/HelperClasses/VersionResolver.h"
 #include "Core/State.h"
 #include "Core/System.h"
@@ -32,7 +31,6 @@ static std::array all_emu_functions_metadata_list = {
 
 static std::string load_state_name;
 static std::string save_state_name;
-static std::string movie_path_name;
 static std::string play_movie_name;
 static std::optional<std::string> blank_string;
 static std::string save_movie_name;
@@ -64,9 +62,7 @@ ArgHolder* EmuFrameAdvance(ScriptContext* current_script, std::vector<ArgHolder*
 
 bool CheckIfFileExists(std::string filename)
 {
-  if (!std::filesystem::exists(filename))
-    return false;
-  return true;
+  return std::filesystem::exists(filename);
 }
 
 ArgHolder* EmuLoadState(ScriptContext* current_script, std::vector<ArgHolder*>* args_list)
@@ -75,7 +71,7 @@ ArgHolder* EmuLoadState(ScriptContext* current_script, std::vector<ArgHolder*>* 
   if (!CheckIfFileExists(load_state_name))
   {
     return CreateErrorStringArgHolder(
-        fmt::format("could not find savestate with filename of {}", load_state_name).c_str());
+        fmt::format("Could not find savestate with filename of {}", load_state_name).c_str());
   }
   State::LoadAs(Core::System::GetInstance(), load_state_name);
   return CreateVoidTypeArgHolder();
@@ -94,7 +90,7 @@ ArgHolder* EmuPlayMovie(ScriptContext* current_script, std::vector<ArgHolder*>* 
   if (!CheckIfFileExists(play_movie_name))
   {
     return CreateErrorStringArgHolder(
-        fmt::format("could not find a movie with filename of {}", play_movie_name).c_str());
+        fmt::format("Could not find a movie with filename of {}", play_movie_name).c_str());
   }
   Movie::MovieManager& movie_manager = Core::System::GetInstance().GetMovie();
   movie_manager.EndPlayInput(false);
