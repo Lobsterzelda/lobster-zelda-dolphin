@@ -92,7 +92,7 @@ static std::array all_graphics_functions_metadata_list = {
                      {Scripting::ArgTypeEnum::ListOfPoints, Scripting::ArgTypeEnum::String}),
 
     FunctionMetadata("drawText", "1.0", "drawText(30.0, 45.0, colorString, \"Hello World!\")",
-                     DrawText, Scripting::ArgTypeEnum::VoidType,
+                     DrawTextFunction, Scripting::ArgTypeEnum::VoidType,
                      {Scripting::ArgTypeEnum::Float, Scripting::ArgTypeEnum::Float,
                       Scripting::ArgTypeEnum::String, Scripting::ArgTypeEnum::String}),
 
@@ -111,7 +111,7 @@ static std::array all_graphics_functions_metadata_list = {
         "addRadioButton", "1.0", "addRadioButton(\"apples\", 42, 0)", AddRadioButton,
         Scripting::ArgTypeEnum::VoidType,
         {Scripting::ArgTypeEnum::String, Scripting::ArgTypeEnum::S64, Scripting::ArgTypeEnum::S64}),
-    FunctionMetadata("getRadioButtonGroupValue", "1.0", "getRadioButtonGroupValue((42)",
+    FunctionMetadata("getRadioButtonGroupValue", "1.0", "getRadioButtonGroupValue(42)",
                      GetRadioButtonGroupValue, Scripting::ArgTypeEnum::S64,
                      {Scripting::ArgTypeEnum::S64}),
     FunctionMetadata("setRadioButtonGroupValue", "1.0", "setRadioButtonGroupValue(42, 1)",
@@ -432,25 +432,6 @@ ArgHolder* DrawFilledCircle(ScriptContext* current_script, std::vector<ArgHolder
   return CreateVoidTypeArgHolder();
 }
 
-/*
-ArgHolder DrawEmptyArc(ScriptContext* current_script, std::vector<ArgHolder*>* args_list)
-{
-  float x1 = (*args_list)[0]->float_val;
-  float y1 = (*args_list)[1]->float_val;
-  float x2 = (*args_list)[2]->float_val;
-  float y2 = (*args_list)[3]->float_val;
-  float x3 = (*args_list)[4]->float_val;
-  float y3 = (*args_list)[5]->float_val;
-  float x4 = (*args_list)[6]->float_val;
-  float y4 = (*args_list)[7]->float_val;
-  long long num_sides = (*args_list)[6]->s64_val;
-
-  ImGui::GetForegroundDrawList()->AddBezierCubic({x1, y1}, {x2, y2}, {x3, y3},
-                                                     {x4, y4} , ParseColor("yellow"), 5.0,
-num_sides); return CreateVoidTypeArgHolder();
-}
-*/
-
 ArgHolder* DrawEmptyPolygon(ScriptContext* current_script, std::vector<ArgHolder*>* args_list)
 {
   std::vector<ImVec2> list_of_points = (*args_list)[0]->list_of_points;
@@ -506,7 +487,9 @@ ArgHolder* DrawFilledPolygon(ScriptContext* current_script, std::vector<ArgHolde
   return CreateVoidTypeArgHolder();
 }
 
-ArgHolder* DrawText(ScriptContext* current_script, std::vector<ArgHolder*>* args_list)
+// NOTE: ImGui has a DrawText macro, which is why this is named DrawTextFunction instead, for
+// clarity.
+ArgHolder* DrawTextFunction(ScriptContext* current_script, std::vector<ArgHolder*>* args_list)
 {
   float x = (*args_list)[0]->float_val;
   float y = (*args_list)[1]->float_val;
@@ -559,10 +542,12 @@ ArgHolder* GetCheckboxValue(ScriptContext* current_script, std::vector<ArgHolder
 {
   long long checkbox_id = (*args_list)[0]->s64_val;
   if (id_to_checkbox_map.count(checkbox_id) == 0)
+  {
     return CreateErrorStringArgHolder(
-        fmt::format("Attempted to get the value of an undefined checkbox with an index of {}. User "
+        fmt::format("Attempted to get the value of an undefined checkbox with an ID of {}. User "
                     "must call addCheckbox() before they can get the checkbox's value!",
                     checkbox_id));
+  }
 
   return CreateBoolArgHolder(*(id_to_checkbox_map[checkbox_id]));
 }
@@ -572,10 +557,12 @@ ArgHolder* SetCheckboxValue(ScriptContext* current_script, std::vector<ArgHolder
   long long checkbox_id = (*args_list)[0]->s64_val;
   bool new_bool_value = (*args_list)[1]->bool_val;
   if (id_to_checkbox_map.count(checkbox_id) == 0)
+  {
     return CreateErrorStringArgHolder(fmt::format(
-        "Attempted to set the value of a checkbox with an index of {} before creating it. User "
+        "Attempted to set the value of a checkbox with an ID of {} before creating it. User "
         "must call addCheckbox() to create the checkbox before they can set its value!",
         checkbox_id));
+  }
 
   *(id_to_checkbox_map[checkbox_id]) = new_bool_value;
 
@@ -633,10 +620,12 @@ ArgHolder* GetRadioButtonGroupValue(ScriptContext* current_script,
 {
   long long radio_group_id = (*args_list)[0]->s64_val;
   if (id_to_radio_group_map.count(radio_group_id) == 0)
+  {
     return CreateErrorStringArgHolder(fmt::format(
         "Attempted to get the value of an undefined radio group with an ID of {}. User must call "
         "addRadioButtonGroup() before they can get the radio button's value!",
         radio_group_id));
+  }
   return CreateS64ArgHolder(*(id_to_radio_group_map[radio_group_id]));
 }
 
@@ -646,11 +635,13 @@ ArgHolder* SetRadioButtonGroupValue(ScriptContext* current_script,
   long long radio_group_id = (*args_list)[0]->s64_val;
   long long new_int_value = (*args_list)[1]->s64_val;
   if (id_to_radio_group_map.count(radio_group_id) == 0)
+  {
     return CreateErrorStringArgHolder(
         fmt::format("Attempted to set the value of a radio group with an ID of {} before creating "
                     "it. User must call addRadioButtonGroup() before they can set the value of a "
                     "radio button group!",
                     radio_group_id));
+  }
   *(id_to_radio_group_map[radio_group_id]) = new_int_value;
   return CreateVoidTypeArgHolder();
 }
@@ -684,10 +675,12 @@ ArgHolder* GetTextBoxValue(ScriptContext* current_script, std::vector<ArgHolder*
 {
   long long text_box_id = (*args_list)[0]->s64_val;
   if (id_to_text_box_map.count(text_box_id) == 0)
+  {
     return CreateErrorStringArgHolder(fmt::format(
         "Attempted to get the textbox value of an invalid textbox with an ID of {}. User must call "
         "addTextBox() to create a text box before they can get its value!",
         text_box_id));
+  }
   return CreateStringArgHolder(*(id_to_text_box_map[text_box_id]));
 }
 
@@ -696,9 +689,11 @@ ArgHolder* SetTextBoxValue(ScriptContext* current_script, std::vector<ArgHolder*
   long long text_box_id = (*args_list)[0]->s64_val;
   std::string new_string_value = (*args_list)[1]->string_val;
   if (id_to_text_box_map.count(text_box_id) == 0)
+  {
     return CreateErrorStringArgHolder(
         "Attempted to set the value of a text box which had not been created. User "
         "must call addTextBox() to create a text box before they can set its value!");
+  }
   *(id_to_text_box_map[text_box_id]) = new_string_value;
   return CreateVoidTypeArgHolder();
 }
@@ -740,10 +735,12 @@ ArgHolder* PressButton(ScriptContext* current_script, std::vector<ArgHolder*>* a
   }
 
   if (!current_script->dll_specific_api_definitions.IsButtonRegistered(current_script, button_id))
+  {
     return CreateErrorStringArgHolder(fmt::format(
         "Attempted to press undefined button of {}. User must call "
         "GraphicsAPI:registerButtonCallback() before they can call GraphicsAPI:pressButton()",
         button_id));
+  }
 
   current_script->dll_specific_api_definitions.GetButtonCallbackAndAddToQueue(current_script,
                                                                               button_id);

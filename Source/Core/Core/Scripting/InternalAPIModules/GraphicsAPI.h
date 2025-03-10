@@ -4,6 +4,7 @@
 #include <vector>
 #include "Core/Scripting/HelperClasses/ClassMetadata.h"
 #include "Core/Scripting/HelperClasses/ScriptContext.h"
+
 namespace Scripting::GraphicsAPI
 {
 
@@ -23,7 +24,7 @@ ArgHolder* DrawEmptyCircle(ScriptContext* current_script, std::vector<ArgHolder*
 ArgHolder* DrawFilledCircle(ScriptContext* current_script, std::vector<ArgHolder*>* args_list);
 ArgHolder* DrawEmptyPolygon(ScriptContext* current_script, std::vector<ArgHolder*>* args_list);
 ArgHolder* DrawFilledPolygon(ScriptContext* current_script, std::vector<ArgHolder*>* args_list);
-ArgHolder* DrawText(ScriptContext* current_script, std::vector<ArgHolder*>* args_list);
+ArgHolder* DrawTextFunction(ScriptContext* current_script, std::vector<ArgHolder*>* args_list);
 ArgHolder* AddCheckbox(ScriptContext* current_script, std::vector<ArgHolder*>* args_list);
 ArgHolder* GetCheckboxValue(ScriptContext* current_script, std::vector<ArgHolder*>* args_list);
 ArgHolder* SetCheckboxValue(ScriptContext* current_script, std::vector<ArgHolder*>* args_list);
