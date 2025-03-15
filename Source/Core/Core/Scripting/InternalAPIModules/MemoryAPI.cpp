@@ -85,7 +85,7 @@ static std::array all_memory_functions_metadata_list = {
                      Scripting::ArgTypeEnum::VoidType,
                      {Scripting::ArgTypeEnum::S64, Scripting::ArgTypeEnum::ListOfBytes}),
     FunctionMetadata("writeAllMemoryAsUnsignedBytesToFile", "1.0",
-                     "ReadAllMemoryAsUnsignedBytes(myFileName)",
+                     "writeAllMemoryAsUnsignedBytesToFile(myFileName)",
                      WriteAllMemoryAsUnsignedBytesToFile, Scripting::ArgTypeEnum::VoidType,
                      {Scripting::ArgTypeEnum::String})};
 
@@ -113,14 +113,13 @@ ArgHolder* ReadU8(ScriptContext* current_script, std::vector<ArgHolder*>* args_l
 {
   long long address = (*args_list)[0]->s64_val;
   if (address < 0)
-    return CreateErrorStringArgHolder("address is not allowed to be negative!");
+    return CreateErrorStringArgHolder("Address is not allowed to be negative!");
   std::optional<PowerPC::ReadResult<u8>> read_result =
       PowerPC::MMU::HostTryReadU8(Core::CPUThreadGuard(Core::System::GetInstance()), address);
   if (!read_result.has_value())
   {
-    // return CreateErrorStringArgHolder(fmt::format("Attempt to read u8 from address {} failed!,
-    // address))
-    return CreateS32ArgHolder(0);  // TODO: remove this line and uncomment out the line above.
+    return CreateErrorStringArgHolder(
+        fmt::format("Attempt to read u8 from address {} failed!", address));
   }
   return CreateU8ArgHolder(read_result.value().value);
 }
@@ -142,7 +141,7 @@ ArgHolder* ReadU32(ScriptContext* current_script, std::vector<ArgHolder*>* args_
 {
   long long address = (*args_list)[0]->s64_val;
   if (address < 0)
-    return CreateErrorStringArgHolder("Address is not allowd to be negative!");
+    return CreateErrorStringArgHolder("Address is not allowed to be negative!");
   std::optional<PowerPC::ReadResult<u32>> read_result =
       PowerPC::MMU::HostTryReadU32(Core::CPUThreadGuard(Core::System::GetInstance()), address);
   if (!read_result.has_value())
@@ -291,7 +290,7 @@ ArgHolder* ReadNullTerminatedString(ScriptContext* current_script,
   long long address = (*args_list)[0]->s64_val;
 
   if (address < 0)
-    return CreateErrorStringArgHolder("Address is not allowd to be negative!");
+    return CreateErrorStringArgHolder("Address is not allowed to be negative!");
 
   std::string returnString = "";
 
@@ -529,8 +528,11 @@ ArgHolder* WriteString(ScriptContext* current_script, std::vector<ArgHolder*>* a
   size_t string_length = input_string.length();
   for (int i = 0; i < string_length; ++i)
   {
+    char char_val = input_string[i];
+    u8 u8_val = 0;
+    memcpy(&u8_val, &char_val, sizeof(u8));
     std::optional<PowerPC::WriteResult> write_result = PowerPC::MMU::HostTryWriteU8(
-        Core::CPUThreadGuard(Core::System::GetInstance()), input_string[i], address + i);
+        Core::CPUThreadGuard(Core::System::GetInstance()), u8_val, address + i);
     if (!write_result.has_value())
       return CreateErrorStringArgHolder(
           fmt::format("Could not write char of {} to address {}", input_string[i], address + i));
@@ -544,12 +546,10 @@ ArgHolder* WriteString(ScriptContext* current_script, std::vector<ArgHolder*>* a
   return CreateVoidTypeArgHolder();
 }
 
-// TODO: Update documentation for this function (and any functions that involve ListOfBytes
-// ArgHolders).
 ArgHolder* WriteBytes(ScriptContext* current_script, std::vector<ArgHolder*>* args_list)
 {
   long long address = (*args_list)[0]->s64_val;
-  std::vector<s16> bytes_list = (*args_list)[0]->bytes_list;
+  std::vector<s16> bytes_list = (*args_list)[1]->bytes_list;
   size_t num_bytes = bytes_list.size();
 
   for (size_t i = 0; i < num_bytes; ++i)
