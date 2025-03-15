@@ -3,6 +3,7 @@
 #include <fmt/format.h>
 #include "Common/GekkoDisassembler.h"
 #include "Core/Core.h"
+#include "Core/Movie.h"
 #include "Core/PowerPC/MMU.h"
 #include "Core/Scripting/EventCallbackRegistrationAPIs/OnInstructionHitCallbackAPI.h"
 #include "Core/Scripting/EventCallbackRegistrationAPIs/OnMemoryAddressReadFromCallbackAPI.h"
@@ -18,13 +19,12 @@ const char* class_name = "InstructionStepAPI";
 static std::array all_instruction_step_functions_metadata_list = {
     FunctionMetadata("singleStep", "1.0", "singleStep()", SingleStep,
                      Scripting::ArgTypeEnum::VoidType, {}),
-    FunctionMetadata("stepOver", "1.0", "stepOver()", StepOver,
-                     Scripting::ArgTypeEnum::VoidType, {}),
-    FunctionMetadata("stepOut", "1.0", "stepOut()", StepOut, Scripting::ArgTypeEnum::VoidType,
+    FunctionMetadata("stepOver", "1.0", "stepOver()", StepOver, Scripting::ArgTypeEnum::VoidType,
                      {}),
+    FunctionMetadata("stepOut", "1.0", "stepOut()", StepOut, Scripting::ArgTypeEnum::VoidType, {}),
     FunctionMetadata("skip", "1.0", "skip()", Skip, Scripting::ArgTypeEnum::VoidType, {}),
-    FunctionMetadata("setPC", "1.0", "setPC(0X80000045)", SetPC,
-                     Scripting::ArgTypeEnum::VoidType, {Scripting::ArgTypeEnum::U32}),
+    FunctionMetadata("setPC", "1.0", "setPC(0X80000045)", SetPC, Scripting::ArgTypeEnum::VoidType,
+                     {Scripting::ArgTypeEnum::U32}),
     FunctionMetadata("getInstructionFromAddress", "1.0", "getInstructionFromAddress(0X80000032)",
                      GetInstructionFromAddress, Scripting::ArgTypeEnum::String,
                      {Scripting::ArgTypeEnum::U32})};
@@ -58,11 +58,11 @@ bool IsCurrentlyInBreakpoint()
 
 ArgHolder* CreateNotInBreakpointError(const std::string& function_name)
 {
-  return CreateErrorStringArgHolder(
-      std::string("Error: CPU was not in a valid callback when ") + function_name +
-      " method was called. Make sure that you invoked function from inside of an OnInstructionHit "
-      "callback, an OnMemoryAddressReadFrom callback, or an OnMemoryAddressWrittenTo callback in "
-      "order to prevent this error.");
+  return CreateErrorStringArgHolder(fmt::format(
+      "Error: CPU was not in a valid callback when {} method was called. Make sure that you "
+      "invoked function from inside of an OnInstructionHit callback, an OnMemoryAddressReadFrom "
+      "callback, or an OnMemoryAddressWrittenTo callback in order to prevent this error.",
+      function_name));
 }
 
 ArgHolder* SingleStep(ScriptContext* current_script, std::vector<ArgHolder*>* args_list)

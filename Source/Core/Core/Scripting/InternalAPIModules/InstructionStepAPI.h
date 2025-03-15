@@ -23,4 +23,5 @@ ArgHolder* Skip(ScriptContext* current_script, std::vector<ArgHolder*>* args_lis
 ArgHolder* SetPC(ScriptContext* current_script, std::vector<ArgHolder*>* args_list);
 ArgHolder* GetInstructionFromAddress(ScriptContext* current_script,
                                      std::vector<ArgHolder*>* args_list);
+
 }  // namespace Scripting::InstructionStepAPI
