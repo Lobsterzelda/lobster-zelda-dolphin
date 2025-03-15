@@ -74,8 +74,8 @@ function MemoryClass:writeTo(address, typeString, value)
 	memory_write_to_table[typeEnum](address, value)
 end
 
-function MemoryClass:writeBytes(addressToValueMap)
-	return MemoryAPI:write_bytes(addressToValueMap)
+function MemoryClass:writeBytes(address, bytesList)
+	return MemoryAPI:write_bytes(address, bytesList)
 end
 
 function MemoryClass:writeString(address, stringToWrite)

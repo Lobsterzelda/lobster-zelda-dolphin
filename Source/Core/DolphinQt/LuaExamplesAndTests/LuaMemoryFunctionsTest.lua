@@ -131,19 +131,16 @@ function readAndWriteBytesTest()
 	resultsTable = {}
 	resultsTable["PASS"] = 0
 	resultsTable["FAIL"] = 0
-	unsignedBytesTable = {}
-	unsignedBytesTable[baseAddress] = 58
-	unsignedBytesTable[baseAddress + 1] = 180
-	unsignedBytesTable[baseAddress + 2] = 243
 	clearAddress(baseAddress)
-	memory:writeBytes(unsignedBytesTable)
-	outputBytesTable = memory:readUnsignedBytes(baseAddress, 3)
+	unsignedBytesArray = {58, 180, 243}
+	memory:writeBytes(baseAddress, unsignedBytesArray)
+	outputBytesArray = memory:readUnsignedBytes(baseAddress, 3)
 	io.write("Test: " .. tostring(testNum) .. "\n")
 	isFailure = false
-	for i = 0, 2 do
-		io.write("\tWrote unsigned byte array value of " .. tostring(unsignedBytesTable[baseAddress + i]) .. " to address " .. tostring(baseAddress + i) .. "\n")
-		io.write("\tValue in resulting spot in memory is: " .. tostring(outputBytesTable[baseAddress + i]) .. "\n\n")
-		if (unsignedBytesTable[baseAddress + i] ~= outputBytesTable[baseAddress + i]) then
+	for i = 1, 3 do
+		io.write("\tWrote unsigned byte array value of " .. tostring(unsignedBytesArray[i]) .. " to address " .. tostring(baseAddress + i - 1) .. "\n")
+		io.write("\tValue in resulting spot in memory is: " .. tostring(outputBytesArray[i]) .. "\n\n")
+		if (unsignedBytesArray[i] ~= outputBytesArray[i]) then
 			isFailure = true
 		end
 	end
@@ -155,20 +152,18 @@ function readAndWriteBytesTest()
 		io.write("PASS!\n\n")
 	end
 	io.flush()
+	
 	testNum = testNum + 1
 	isFailure = false
-	signedBytesTable = {}
-	signedBytesTable[baseAddress] = 32
-	signedBytesTable[baseAddress + 1] = -43
-	signedBytesTable[baseAddress + 2] = 119
+	signedBytesArray = {32, -43, 119}
 	clearAddress(baseAddress)
-	memory:writeBytes(signedBytesTable)
-	outputBytesTable = memory:readSignedBytes(baseAddress, 3)
+	memory:writeBytes(baseAddress, signedBytesArray)
+	outputBytesArray = memory:readSignedBytes(baseAddress, 3)
 	io.write("Test " .. tostring(testNum) .. ":\n")
-	for i = 0, 2 do
-		io.write("\tWrote signed byte array value of " .. tostring(signedBytesTable[baseAddress + i]) .. " to address " .. tostring(baseAddress + i) .. "\n")
-		io.write("\tValue in resulting spot in memory is: " .. tostring(outputBytesTable[baseAddress + i]) .. "\n\n")
-		if (signedBytesTable[baseAddress + i] ~= outputBytesTable[baseAddress + i]) then
+	for i = 1, 3 do
+		io.write("\tWrote signed byte array value of " .. tostring(signedBytesArray[i]) .. " to address " .. tostring(baseAddress + i - 1) .. "\n")
+		io.write("\tValue in resulting spot in memory is: " .. tostring(outputBytesArray[i]) .. "\n\n")
+		if (signedBytesArray[i] ~= outputBytesArray[i]) then
 			isFailure = true
 		end
 	end
