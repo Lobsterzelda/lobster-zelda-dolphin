@@ -2,7 +2,9 @@
 
 #include <memory>
 #include <mutex>
+
 #include "Common/SPSCQueue.h"
+
 #include "Core/Scripting/CoreScriptInterface/Enums/ScriptCallLocationsEnum.h"
 #include "Core/Scripting/CoreScriptInterface/Enums/ScriptReturnCodesEnum.h"
 #include "Core/Scripting/CoreScriptInterface/InternalScriptAPIs/ScriptContext_APIs.h"

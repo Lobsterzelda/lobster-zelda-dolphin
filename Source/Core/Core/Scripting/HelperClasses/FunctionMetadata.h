@@ -1,9 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "Core/Scripting/CoreScriptInterface/Enums/ArgTypeEnum.h"
 #include "Core/Scripting/HelperClasses/ArgHolder.h"
-
 #include "Core/Scripting/HelperClasses/ScriptContext.h"
 
 // This file contains the implementation for the FunctionMetadata class, and the implementations for

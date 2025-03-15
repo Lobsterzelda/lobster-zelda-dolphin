@@ -1,10 +1,8 @@
 #pragma once
 
 #include <string>
-
 #include <vector>
-#include "Core/Movie.h"
-#include "Core/Scripting/HelperClasses/ArgHolder.h"
+
 #include "Core/Scripting/HelperClasses/ClassMetadata.h"
 #include "Core/Scripting/HelperClasses/ScriptContext.h"
 

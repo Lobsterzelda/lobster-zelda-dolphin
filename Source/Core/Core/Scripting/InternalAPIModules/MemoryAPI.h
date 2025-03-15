@@ -3,8 +3,6 @@
 #include <string>
 #include <vector>
 
-#include "Common/CommonTypes.h"
-#include "Core/Scripting/HelperClasses/ArgHolder.h"
 #include "Core/Scripting/HelperClasses/ClassMetadata.h"
 #include "Core/Scripting/HelperClasses/ScriptContext.h"
 

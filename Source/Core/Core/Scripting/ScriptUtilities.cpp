@@ -1,7 +1,15 @@
 #include "Core/Scripting/ScriptUtilities.h"
 
+#include <filesystem>
+#include <fstream>
+#include <iostream>
+#include <unordered_map>
+
 #include "Common/DynamicLibrary.h"
 #include "Common/FileUtil.h"
+#include "Common/MsgHandler.h"
+
+#include "Core/Core.h"
 
 #include "Core/Scripting/CoreScriptInterface/InternalScriptAPIs/ArgHolder_APIs.h"
 #include "Core/Scripting/CoreScriptInterface/InternalScriptAPIs/ClassFunctionsResolver_APIs.h"
@@ -13,16 +21,10 @@
 #include "Core/Scripting/CoreScriptInterface/InternalScriptAPIs/ScriptContext_APIs.h"
 #include "Core/Scripting/CoreScriptInterface/InternalScriptAPIs/VectorOfArgHolders_APIs.h"
 
-#include <algorithm>
-#include <filesystem>
-#include <fstream>
-#include <iostream>
-#include <unordered_map>
-#include "Common/MsgHandler.h"
-#include "Core/Core.h"
 #include "Core/Scripting/EventCallbackRegistrationAPIs/OnInstructionHitCallbackAPI.h"
 #include "Core/Scripting/EventCallbackRegistrationAPIs/OnMemoryAddressReadFromCallbackAPI.h"
 #include "Core/Scripting/EventCallbackRegistrationAPIs/OnMemoryAddressWrittenToCallbackAPI.h"
+
 #include "Core/Scripting/HelperClasses/ArgHolder_API_Implementations.h"
 #include "Core/Scripting/HelperClasses/ClassFunctionsResolver_API_Implementations.h"
 #include "Core/Scripting/HelperClasses/ClassMetadata.h"
@@ -32,7 +34,9 @@
 #include "Core/Scripting/HelperClasses/ModuleLists_API_Implementations.h"
 #include "Core/Scripting/HelperClasses/ScriptQueueEvent.h"
 #include "Core/Scripting/HelperClasses/VectorOfArgHolders_API_Implementations.h"
+
 #include "Core/Scripting/InternalAPIModules/GraphicsAPI.h"
+
 #include "Core/System.h"
 
 namespace Scripting::ScriptUtilities

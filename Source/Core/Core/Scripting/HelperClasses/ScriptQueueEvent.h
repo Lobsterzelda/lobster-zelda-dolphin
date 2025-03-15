@@ -1,9 +1,9 @@
 #pragma once
 
+#include <string>
+
 #include "Core/Scripting/CoreScriptInterface/InternalScriptAPIs/ScriptContext_APIs.h"
 #include "Core/Scripting/HelperClasses/ScriptQueueEventTypes.h"
-
-#include <string>
 
 #ifdef __cplusplus
 extern "C" {

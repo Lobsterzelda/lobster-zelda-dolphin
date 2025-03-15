@@ -1,17 +1,8 @@
 #include "Core/Scripting/InternalAPIModules/RegistersAPI.h"
 
-#include <algorithm>
 #include <fmt/format.h>
 #include <memory>
-#include <string>
 
-#include <unordered_map>
-#include "Common/CommonTypes.h"
-#include "Core/Core.h"
-#include "Core/PowerPC/PowerPC.h"
-#include "Core/Scripting/CoreScriptInterface/Enums/ArgTypeEnum.h"
-#include "Core/Scripting/HelperClasses/ArgHolder.h"
-#include "Core/Scripting/HelperClasses/ClassMetadata.h"
 #include "Core/Scripting/HelperClasses/VersionResolver.h"
 #include "Core/System.h"
 

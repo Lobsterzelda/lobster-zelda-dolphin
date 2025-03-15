@@ -3357,44 +3357,44 @@ PASS!
 Test 667:
 	Testing writing the following bytes to register r31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 668:
 	Testing writing the following bytes to register r31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 669:
 	Testing writing the following bytes to register r31 with an offset of 2 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 670:
 	Testing writing the following bytes to register r31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 671:
 	Testing writing the following bytes to register r31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 672:
 	Testing writing the following bytes to register r31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128
-	Value read back out was: 200, 100, 31, 128
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 673:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
@@ -3511,842 +3511,842 @@ PASS!
 Test 689:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 690:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 691:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 692:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 693:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 694:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 695:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 696:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 697:
 	Testing writing the following bytes to register f31 with an offset of 8 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 698:
 	Testing writing the following bytes to register f31 with an offset of 9 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 699:
 	Testing writing the following bytes to register f31 with an offset of 10 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 700:
 	Testing writing the following bytes to register f31 with an offset of 11 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 701:
 	Testing writing the following bytes to register f31 with an offset of 12 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 702:
 	Testing writing the following bytes to register f31 with an offset of 13 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 703:
 	Testing writing the following bytes to register f31 with an offset of 14 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100
-	Value read back out was: 200, 100
-	Results were equal.
-PASS!
+	Value read back out was: 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 704:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 705:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 706:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 707:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 708:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 709:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 710:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 711:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 712:
 	Testing writing the following bytes to register f31 with an offset of 8 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 713:
 	Testing writing the following bytes to register f31 with an offset of 9 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 714:
 	Testing writing the following bytes to register f31 with an offset of 10 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 715:
 	Testing writing the following bytes to register f31 with an offset of 11 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 716:
 	Testing writing the following bytes to register f31 with an offset of 12 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 717:
 	Testing writing the following bytes to register f31 with an offset of 13 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31
-	Value read back out was: 200, 100, 31
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 718:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128
-	Value read back out was: 200, 100, 31, 128
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 719:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128
-	Value read back out was: 200, 100, 31, 128
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 720:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128
-	Value read back out was: 200, 100, 31, 128
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 721:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128
-	Value read back out was: 200, 100, 31, 128
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 722:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128
-	Value read back out was: 200, 100, 31, 128
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 723:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128
-	Value read back out was: 200, 100, 31, 128
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 724:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128
-	Value read back out was: 200, 100, 31, 128
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 725:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128
-	Value read back out was: 200, 100, 31, 128
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 726:
 	Testing writing the following bytes to register f31 with an offset of 8 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128
-	Value read back out was: 200, 100, 31, 128
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 727:
 	Testing writing the following bytes to register f31 with an offset of 9 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128
-	Value read back out was: 200, 100, 31, 128
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 728:
 	Testing writing the following bytes to register f31 with an offset of 10 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128
-	Value read back out was: 200, 100, 31, 128
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 729:
 	Testing writing the following bytes to register f31 with an offset of 11 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128
-	Value read back out was: 200, 100, 31, 128
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 730:
 	Testing writing the following bytes to register f31 with an offset of 12 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128
-	Value read back out was: 200, 100, 31, 128
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 731:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1
-	Value read back out was: 200, 100, 31, 128, 1
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 0, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 732:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1
-	Value read back out was: 200, 100, 31, 128, 1
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 733:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1
-	Value read back out was: 200, 100, 31, 128, 1
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 734:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1
-	Value read back out was: 200, 100, 31, 128, 1
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 735:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1
-	Value read back out was: 200, 100, 31, 128, 1
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 736:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1
-	Value read back out was: 200, 100, 31, 128, 1
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 737:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1
-	Value read back out was: 200, 100, 31, 128, 1
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 738:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1
-	Value read back out was: 200, 100, 31, 128, 1
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 739:
 	Testing writing the following bytes to register f31 with an offset of 8 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1
-	Value read back out was: 200, 100, 31, 128, 1
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 740:
 	Testing writing the following bytes to register f31 with an offset of 9 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1
-	Value read back out was: 200, 100, 31, 128, 1
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 741:
 	Testing writing the following bytes to register f31 with an offset of 10 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1
-	Value read back out was: 200, 100, 31, 128, 1
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 742:
 	Testing writing the following bytes to register f31 with an offset of 11 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1
-	Value read back out was: 200, 100, 31, 128, 1
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 743:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0
-	Value read back out was: 200, 100, 31, 128, 1, 0
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 0, 1, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 744:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0
-	Value read back out was: 200, 100, 31, 128, 1, 0
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 745:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0
-	Value read back out was: 200, 100, 31, 128, 1, 0
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 746:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0
-	Value read back out was: 200, 100, 31, 128, 1, 0
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 747:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0
-	Value read back out was: 200, 100, 31, 128, 1, 0
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 748:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0
-	Value read back out was: 200, 100, 31, 128, 1, 0
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 749:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0
-	Value read back out was: 200, 100, 31, 128, 1, 0
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 750:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0
-	Value read back out was: 200, 100, 31, 128, 1, 0
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 751:
 	Testing writing the following bytes to register f31 with an offset of 8 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0
-	Value read back out was: 200, 100, 31, 128, 1, 0
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 752:
 	Testing writing the following bytes to register f31 with an offset of 9 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0
-	Value read back out was: 200, 100, 31, 128, 1, 0
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 753:
 	Testing writing the following bytes to register f31 with an offset of 10 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0
-	Value read back out was: 200, 100, 31, 128, 1, 0
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 754:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 0, 1, 200, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 755:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 756:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 757:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 758:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 759:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 760:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 761:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 762:
 	Testing writing the following bytes to register f31 with an offset of 8 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 763:
 	Testing writing the following bytes to register f31 with an offset of 9 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 764:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 0, 1, 200, 2, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 765:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 766:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 767:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 768:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 769:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 770:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 771:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 772:
 	Testing writing the following bytes to register f31 with an offset of 8 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 773:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 0, 1, 200, 2, 200, 110
+	Results were NOT equal.
+FAILURE!
 
 Test 774:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2, 110, 110
+	Results were NOT equal.
+FAILURE!
 
 Test 775:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2, 110, 110
+	Results were NOT equal.
+FAILURE!
 
 Test 776:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 110, 110
+	Results were NOT equal.
+FAILURE!
 
 Test 777:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 110, 110
+	Results were NOT equal.
+FAILURE!
 
 Test 778:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 110, 110
+	Results were NOT equal.
+FAILURE!
 
 Test 779:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 110, 110
+	Results were NOT equal.
+FAILURE!
 
 Test 780:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 110, 110
+	Results were NOT equal.
+FAILURE!
 
 Test 781:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 0, 1, 200, 2, 200, 110, 31
+	Results were NOT equal.
+FAILURE!
 
 Test 782:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2, 110, 110, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 783:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2, 110, 110, 1
+	Results were NOT equal.
+FAILURE!
 
 Test 784:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 110, 110, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 785:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 110, 110, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 786:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 110, 110, 110
+	Results were NOT equal.
+FAILURE!
 
 Test 787:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 110, 110, 110
+	Results were NOT equal.
+FAILURE!
 
 Test 788:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 0, 1, 200, 2, 31, 110, 1, 9
+	Results were NOT equal.
+FAILURE!
 
 Test 789:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2, 110, 110, 9, 9
+	Results were NOT equal.
+FAILURE!
 
 Test 790:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2, 110, 110, 9, 9
+	Results were NOT equal.
+FAILURE!
 
 Test 791:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 110, 110, 9, 9
+	Results were NOT equal.
+FAILURE!
 
 Test 792:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 110, 110, 9, 9
+	Results were NOT equal.
+FAILURE!
 
 Test 793:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 110, 110, 9, 9
+	Results were NOT equal.
+FAILURE!
 
 Test 794:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 0, 1, 200, 2, 31, 110, 1, 9, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 795:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2, 110, 110, 9, 9, 110
+	Results were NOT equal.
+FAILURE!
 
 Test 796:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2, 110, 110, 9, 9, 110
+	Results were NOT equal.
+FAILURE!
 
 Test 797:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 110, 110, 9, 9, 9
+	Results were NOT equal.
+FAILURE!
 
 Test 798:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 110, 110, 9, 9, 9
+	Results were NOT equal.
+FAILURE!
 
 Test 799:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 0, 1, 31, 2, 1, 110, 2, 9, 110, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 800:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2, 110, 110, 9, 9, 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 801:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2, 110, 110, 9, 9, 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 802:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200
-	Results were equal.
-PASS!
+	Value read back out was: 200, 31, 31, 1, 1, 2, 2, 110, 110, 9, 9, 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 803:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200, 21
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200, 21
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 0, 1, 31, 2, 1, 110, 2, 9, 110, 200, 9
+	Results were NOT equal.
+FAILURE!
 
 Test 804:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200, 21
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200, 21
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2, 110, 110, 9, 9, 200, 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 805:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200, 21
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200, 21
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2, 110, 110, 9, 9, 200, 200, 200
+	Results were NOT equal.
+FAILURE!
 
 Test 806:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200, 21, 78
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200, 21, 78
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 0, 1, 1, 2, 2, 110, 110, 9, 9, 200, 200, 78
+	Results were NOT equal.
+FAILURE!
 
 Test 807:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200, 21, 78
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200, 21, 78
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 1, 1, 2, 2, 110, 110, 9, 9, 200, 200, 78, 78
+	Results were NOT equal.
+FAILURE!
 
 Test 808:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a unsigned array is the same as the value written:
 	Value Written:           200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200, 21, 78, 2
-	Value read back out was: 200, 100, 31, 128, 1, 0, 2, 89, 110, 255, 9, 90, 200, 21, 78, 2
-	Results were equal.
-PASS!
+	Value read back out was: 200, 0, 31, 0, 1, 1, 2, 2, 110, 110, 9, 9, 200, 200, 78, 78
+	Results were NOT equal.
+FAILURE!
 
 --------------------------------------
 
@@ -4383,44 +4383,44 @@ PASS!
 Test 813:
 	Testing writing the following bytes to register r31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 814:
 	Testing writing the following bytes to register r31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 815:
 	Testing writing the following bytes to register r31 with an offset of 2 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 816:
 	Testing writing the following bytes to register r31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 817:
 	Testing writing the following bytes to register r31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 818:
 	Testing writing the following bytes to register r31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31
-	Value read back out was: -45, -128, 0, 31
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 819:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
@@ -4537,843 +4537,843 @@ PASS!
 Test 835:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 836:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 837:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 838:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 839:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 840:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 841:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 842:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 843:
 	Testing writing the following bytes to register f31 with an offset of 8 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 844:
 	Testing writing the following bytes to register f31 with an offset of 9 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 845:
 	Testing writing the following bytes to register f31 with an offset of 10 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 846:
 	Testing writing the following bytes to register f31 with an offset of 11 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 847:
 	Testing writing the following bytes to register f31 with an offset of 12 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 848:
 	Testing writing the following bytes to register f31 with an offset of 13 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 849:
 	Testing writing the following bytes to register f31 with an offset of 14 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128
-	Value read back out was: -45, -128
-	Results were equal.
-PASS!
+	Value read back out was: -45, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 850:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 851:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 852:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 853:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 854:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 855:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 856:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 857:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 858:
 	Testing writing the following bytes to register f31 with an offset of 8 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 859:
 	Testing writing the following bytes to register f31 with an offset of 9 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 860:
 	Testing writing the following bytes to register f31 with an offset of 10 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 861:
 	Testing writing the following bytes to register f31 with an offset of 11 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 862:
 	Testing writing the following bytes to register f31 with an offset of 12 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 863:
 	Testing writing the following bytes to register f31 with an offset of 13 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0
-	Value read back out was: -45, -128, 0
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 864:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31
-	Value read back out was: -45, -128, 0, 31
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 865:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31
-	Value read back out was: -45, -128, 0, 31
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 866:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31
-	Value read back out was: -45, -128, 0, 31
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 867:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31
-	Value read back out was: -45, -128, 0, 31
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 868:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31
-	Value read back out was: -45, -128, 0, 31
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 869:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31
-	Value read back out was: -45, -128, 0, 31
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 870:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31
-	Value read back out was: -45, -128, 0, 31
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 871:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31
-	Value read back out was: -45, -128, 0, 31
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 872:
 	Testing writing the following bytes to register f31 with an offset of 8 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31
-	Value read back out was: -45, -128, 0, 31
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 873:
 	Testing writing the following bytes to register f31 with an offset of 9 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31
-	Value read back out was: -45, -128, 0, 31
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 874:
 	Testing writing the following bytes to register f31 with an offset of 10 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31
-	Value read back out was: -45, -128, 0, 31
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 875:
 	Testing writing the following bytes to register f31 with an offset of 11 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31
-	Value read back out was: -45, -128, 0, 31
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 876:
 	Testing writing the following bytes to register f31 with an offset of 12 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31
-	Value read back out was: -45, -128, 0, 31
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 877:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2
-	Value read back out was: -45, -128, 0, 31, 2
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 878:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2
-	Value read back out was: -45, -128, 0, 31, 2
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 879:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2
-	Value read back out was: -45, -128, 0, 31, 2
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 880:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2
-	Value read back out was: -45, -128, 0, 31, 2
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 881:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2
-	Value read back out was: -45, -128, 0, 31, 2
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 882:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2
-	Value read back out was: -45, -128, 0, 31, 2
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 883:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2
-	Value read back out was: -45, -128, 0, 31, 2
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 884:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2
-	Value read back out was: -45, -128, 0, 31, 2
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 885:
 	Testing writing the following bytes to register f31 with an offset of 8 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2
-	Value read back out was: -45, -128, 0, 31, 2
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 886:
 	Testing writing the following bytes to register f31 with an offset of 9 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2
-	Value read back out was: -45, -128, 0, 31, 2
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 887:
 	Testing writing the following bytes to register f31 with an offset of 10 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2
-	Value read back out was: -45, -128, 0, 31, 2
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 888:
 	Testing writing the following bytes to register f31 with an offset of 11 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2
-	Value read back out was: -45, -128, 0, 31, 2
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 889:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127
-	Value read back out was: -45, -128, 0, 31, 2, 127
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0, 2, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 890:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127
-	Value read back out was: -45, -128, 0, 31, 2, 127
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 891:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127
-	Value read back out was: -45, -128, 0, 31, 2, 127
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 892:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127
-	Value read back out was: -45, -128, 0, 31, 2, 127
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 893:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127
-	Value read back out was: -45, -128, 0, 31, 2, 127
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 894:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127
-	Value read back out was: -45, -128, 0, 31, 2, 127
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 895:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127
-	Value read back out was: -45, -128, 0, 31, 2, 127
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 896:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127
-	Value read back out was: -45, -128, 0, 31, 2, 127
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 897:
 	Testing writing the following bytes to register f31 with an offset of 8 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127
-	Value read back out was: -45, -128, 0, 31, 2, 127
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 898:
 	Testing writing the following bytes to register f31 with an offset of 9 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127
-	Value read back out was: -45, -128, 0, 31, 2, 127
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 899:
 	Testing writing the following bytes to register f31 with an offset of 10 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127
-	Value read back out was: -45, -128, 0, 31, 2, 127
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 900:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0, 2, -45, -90
+	Results were NOT equal.
+FAILURE!
 
 Test 901:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90
+	Results were NOT equal.
+FAILURE!
 
 Test 902:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90
+	Results were NOT equal.
+FAILURE!
 
 Test 903:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90
+	Results were NOT equal.
+FAILURE!
 
 Test 904:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90
+	Results were NOT equal.
+FAILURE!
 
 Test 905:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90
+	Results were NOT equal.
+FAILURE!
 
 Test 906:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90
+	Results were NOT equal.
+FAILURE!
 
 Test 907:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90
+	Results were NOT equal.
+FAILURE!
 
 Test 908:
 	Testing writing the following bytes to register f31 with an offset of 8 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90
+	Results were NOT equal.
+FAILURE!
 
 Test 909:
 	Testing writing the following bytes to register f31 with an offset of 9 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90
+	Results were NOT equal.
+FAILURE!
 
 Test 910:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0, 2, -45, -90, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 911:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 912:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -45
+	Results were NOT equal.
+FAILURE!
 
 Test 913:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 914:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 915:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 916:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 917:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -90
+	Results were NOT equal.
+FAILURE!
 
 Test 918:
 	Testing writing the following bytes to register f31 with an offset of 8 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -90
+	Results were NOT equal.
+FAILURE!
 
 Test 919:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0, 2, -45, -90, -45, -8
+	Results were NOT equal.
+FAILURE!
 
 Test 920:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8
+	Results were NOT equal.
+FAILURE!
 
 Test 921:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8
+	Results were NOT equal.
+FAILURE!
 
 Test 922:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8
+	Results were NOT equal.
+FAILURE!
 
 Test 923:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8
+	Results were NOT equal.
+FAILURE!
 
 Test 924:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8
+	Results were NOT equal.
+FAILURE!
 
 Test 925:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8
+	Results were NOT equal.
+FAILURE!
 
 Test 926:
 	Testing writing the following bytes to register f31 with an offset of 7 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8
+	Results were NOT equal.
+FAILURE!
 
 Test 927:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0, 2, -45, -90, -45, -8, 0
+	Results were NOT equal.
+FAILURE!
 
 Test 928:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 929:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 2
+	Results were NOT equal.
+FAILURE!
 
 Test 930:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, -90
+	Results were NOT equal.
+FAILURE!
 
 Test 931:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, -90
+	Results were NOT equal.
+FAILURE!
 
 Test 932:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, -8
+	Results were NOT equal.
+FAILURE!
 
 Test 933:
 	Testing writing the following bytes to register f31 with an offset of 6 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, -8
+	Results were NOT equal.
+FAILURE!
 
 Test 934:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0, 2, -45, -90, 0, -8, 2, 100
+	Results were NOT equal.
+FAILURE!
 
 Test 935:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100
+	Results were NOT equal.
+FAILURE!
 
 Test 936:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100
+	Results were NOT equal.
+FAILURE!
 
 Test 937:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100
+	Results were NOT equal.
+FAILURE!
 
 Test 938:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100
+	Results were NOT equal.
+FAILURE!
 
 Test 939:
 	Testing writing the following bytes to register f31 with an offset of 5 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100
+	Results were NOT equal.
+FAILURE!
 
 Test 940:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0, 2, -45, -90, 0, -8, 2, 100, -90
+	Results were NOT equal.
+FAILURE!
 
 Test 941:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100, -8
+	Results were NOT equal.
+FAILURE!
 
 Test 942:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100, -8
+	Results were NOT equal.
+FAILURE!
 
 Test 943:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100, 100
+	Results were NOT equal.
+FAILURE!
 
 Test 944:
 	Testing writing the following bytes to register f31 with an offset of 4 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100, 100
+	Results were NOT equal.
+FAILURE!
 
 Test 945:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0, 2, 0, -90, 2, -8, -90, 100, -8, -100
+	Results were NOT equal.
+FAILURE!
 
 Test 946:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100, -100, -100
+	Results were NOT equal.
+FAILURE!
 
 Test 947:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100, -100, -100
+	Results were NOT equal.
+FAILURE!
 
 Test 948:
 	Testing writing the following bytes to register f31 with an offset of 3 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100, -100, -100
+	Results were NOT equal.
+FAILURE!
 
 Test 949:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100, 82
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100, 82
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0, 2, 0, -90, 2, -8, -90, 100, -8, -100, 100
+	Results were NOT equal.
+FAILURE!
 
 Test 950:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100, 82
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100, 82
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100, -100, -100, -100
+	Results were NOT equal.
+FAILURE!
 
 Test 951:
 	Testing writing the following bytes to register f31 with an offset of 2 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100, 82
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100, 82
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100, -100, -100, -100
+	Results were NOT equal.
+FAILURE!
 
 Test 952:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100, 82, -10
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100, 82, -10
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100, -100, -100, -10
+	Results were NOT equal.
+FAILURE!
 
 Test 953:
 	Testing writing the following bytes to register f31 with an offset of 1 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100, 82, -10
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100, 82, -10
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100, -100, -100, -10, -10
+	Results were NOT equal.
+FAILURE!
 
 Test 954:
 	Testing writing the following bytes to register f31 with an offset of 0 and making sure that the value read back as a signed array is the same as the value written:
 	Value Written:           -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100, 82, -10, 63
-	Value read back out was: -45, -128, 0, 31, 2, 127, -90, 90, -8, 17, 100, 51, -100, 82, -10, 63
-	Results were equal.
-PASS!
+	Value read back out was: -45, 0, 0, 0, 2, 2, -90, -90, -8, -8, 100, 100, -100, -100, -10, -10
+	Results were NOT equal.
+FAILURE!
 
 Total Tests: 954
-	Tests Passed: 954
-	Tests Failed: 0
+	Tests Passed: 702
+	Tests Failed: 252

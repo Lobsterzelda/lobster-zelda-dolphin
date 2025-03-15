@@ -3,11 +3,7 @@
 #include <fmt/format.h>
 #include "Common/GekkoDisassembler.h"
 #include "Core/Core.h"
-#include "Core/HW/CPU.h"
-#include "Core/Movie.h"
 #include "Core/PowerPC/MMU.h"
-#include "Core/PowerPC/PowerPC.h"
-#include "Core/Scripting/CoreScriptInterface/Enums/ArgTypeEnum.h"
 #include "Core/Scripting/EventCallbackRegistrationAPIs/OnInstructionHitCallbackAPI.h"
 #include "Core/Scripting/EventCallbackRegistrationAPIs/OnMemoryAddressReadFromCallbackAPI.h"
 #include "Core/Scripting/EventCallbackRegistrationAPIs/OnMemoryAddressWrittenToCallbackAPI.h"

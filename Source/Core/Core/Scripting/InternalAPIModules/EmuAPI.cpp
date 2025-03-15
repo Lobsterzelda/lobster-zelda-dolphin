@@ -2,12 +2,9 @@
 
 #include <filesystem>
 #include <fmt/format.h>
-#include <memory>
 #include <optional>
 
-#include "Core/Core.h"
 #include "Core/Movie.h"
-#include "Core/PowerPC/PowerPC.h"
 #include "Core/Scripting/HelperClasses/VersionResolver.h"
 #include "Core/State.h"
 #include "Core/System.h"

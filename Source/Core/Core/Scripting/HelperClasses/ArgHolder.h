@@ -3,6 +3,7 @@
 #include <imgui.h>
 #include <string>
 #include <vector>
+
 #include "Common/CommonTypes.h"
 #include "Core/Movie.h"
 #include "Core/Scripting/CoreScriptInterface/Enums/ArgTypeEnum.h"

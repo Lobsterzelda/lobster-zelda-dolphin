@@ -1,6 +1,7 @@
 #include "Core/Scripting/HelperClasses/GCButton_API_Implementations.h"
 
 #include <string_view>
+
 #include "Common/StringUtil.h"
 #include "Core/Scripting/CoreScriptInterface/Enums/GCButtonNameEnum.h"
 #include "string.h"

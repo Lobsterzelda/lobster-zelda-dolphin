@@ -13,7 +13,6 @@
 #include "Core/HW/SI/SI_Device.h"
 #include "Core/HW/Wiimote.h"
 #include "Core/PowerPC/PowerPC.h"
-#include "Core/Scripting/CoreScriptInterface/Enums/ArgTypeEnum.h"
 #include "Core/Scripting/HelperClasses/VersionResolver.h"
 #include "DiscIO/Enums.h"
 #include "VideoCommon/VideoConfig.h"

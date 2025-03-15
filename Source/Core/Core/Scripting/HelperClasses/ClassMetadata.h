@@ -2,6 +2,7 @@
 
 #include <string>
 #include <vector>
+
 #include "Core/Scripting/HelperClasses/FunctionMetadata.h"
 
 // This file contains the implementations for the APIs in ClassMetadata_APIs

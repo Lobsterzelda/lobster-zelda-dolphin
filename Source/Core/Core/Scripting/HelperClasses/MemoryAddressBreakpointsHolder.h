@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+
 #include "Core/PowerPC/PowerPC.h"
 
 // This is a helper class which stores all memory address read/write breakpoints for a particular

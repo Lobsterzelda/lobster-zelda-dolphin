@@ -1,7 +1,8 @@
 #pragma once
 
 #include <string>
-#include "Core/Scripting/HelperClasses/ArgHolder.h"
+#include <vector>
+
 #include "Core/Scripting/HelperClasses/ClassMetadata.h"
 #include "Core/Scripting/HelperClasses/ScriptContext.h"
 

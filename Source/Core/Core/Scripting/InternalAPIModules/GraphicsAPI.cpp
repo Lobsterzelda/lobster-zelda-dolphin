@@ -1,17 +1,12 @@
 #include "Core/Scripting/InternalAPIModules/GraphicsAPI.h"
 
-#include <atomic>
-#include <cstdlib>
 #include <deque>
 #include <imgui.h>
 #include <imgui_stdlib.h>
-#include <implot.h>
+#include <map>
 #include <stack>
-#include <string>
 
-#include "Core/Scripting/CoreScriptInterface/InternalScriptAPIs/ScriptContext_APIs.h"
 #include "Core/Scripting/HelperClasses/VersionResolver.h"
-#include "Core/Scripting/ScriptUtilities.h"
 
 namespace Scripting::GraphicsAPI
 {

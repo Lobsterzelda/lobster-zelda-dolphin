@@ -6,8 +6,6 @@
 
 #include "Core/Core.h"
 #include "Core/HW/Memmap.h"
-#include "Core/PowerPC/MMU.h"
-#include "Core/Scripting/HelperClasses/ArgHolder.h"
 #include "Core/Scripting/HelperClasses/VersionResolver.h"
 #include "Core/System.h"
 

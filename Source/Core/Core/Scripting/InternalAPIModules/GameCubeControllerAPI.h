@@ -1,17 +1,12 @@
 #pragma once
 
 #include <array>
-#include <memory>
 #include <string>
 #include <vector>
 
-#include "Core/HW/GCPad.h"
 #include "Core/Movie.h"
-#include "Core/Scripting/HelperClasses/ArgHolder.h"
 #include "Core/Scripting/HelperClasses/ClassMetadata.h"
 #include "Core/Scripting/HelperClasses/ScriptContext.h"
-#include "InputCommon/GCPadStatus.h"
-#include "InputCommon/InputConfig.h"
 
 namespace Scripting::GameCubeControllerApi
 {
