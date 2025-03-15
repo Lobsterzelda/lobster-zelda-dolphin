@@ -138,8 +138,8 @@ public:
     register_number = new_register_number;
   }
 
-  u8 register_number;
   RegisterType register_type;
+  u8 register_number;
 };
 
 RegisterObject ParseRegister(const std::string& register_string)
@@ -188,30 +188,25 @@ RegisterObject ParseRegister(const std::string& register_string)
 
 u8* GetAddressForRegister(RegisterObject register_object, u8 offset)
 {
-  u8 register_number = 0;
-  u8* address = nullptr;
+  u32 register_number = register_object.register_number;
+
   switch (register_object.register_type)
   {
   case RegisterObject::RegisterType::GeneralPurposeRegister:
-    register_number = register_object.register_number;
-    address = (reinterpret_cast<u8*>(Core::System::GetInstance().GetPowerPC().GetPPCState().gpr +
-                                     register_number)) +
-              offset;
-    return address;
+    return (reinterpret_cast<u8*>(Core::System::GetInstance().GetPowerPC().GetPPCState().gpr +
+                                  register_number)) +
+           offset;
   case RegisterObject::RegisterType::PcRegister:
-    address = (reinterpret_cast<u8*>(&Core::System::GetInstance().GetPowerPC().GetPPCState().pc)) +
-              offset;
-    return address;
+    return (reinterpret_cast<u8*>(&Core::System::GetInstance().GetPowerPC().GetPPCState().pc)) +
+           offset;
   case RegisterObject::RegisterType::ReturnRegister:
-    address = (reinterpret_cast<u8*>(
-                  &Core::System::GetInstance().GetPowerPC().GetPPCState().spr[SPR_LR])) +
-              offset;
+    return (reinterpret_cast<u8*>(
+               &Core::System::GetInstance().GetPowerPC().GetPPCState().spr[SPR_LR])) +
+           offset;
   case RegisterObject::RegisterType::FloatingPointRegister:
-    address = (reinterpret_cast<u8*>(Core::System::GetInstance().GetPowerPC().GetPPCState().ps +
-                                     register_number)) +
-              offset;
-    return address;
-
+    return (reinterpret_cast<u8*>(Core::System::GetInstance().GetPowerPC().GetPPCState().ps +
+                                  register_number)) +
+           offset;
   default:
     return nullptr;
   }
@@ -415,7 +410,7 @@ ArgHolder* GetFloatFromRegister(ScriptContext* current_script, std::vector<ArgHo
   if (address_pointer == nullptr)
     return ReturnInvalidRegisterNameArgHolder(register_string);
 
-  float float_return_val = 0;
+  float float_return_val = 0.0f;
   memcpy(&float_return_val, address_pointer, sizeof(float));
   return CreateFloatArgHolder(float_return_val);
 }
@@ -434,7 +429,7 @@ ArgHolder* GetDoubleFromRegister(ScriptContext* current_script, std::vector<ArgH
   if (address_pointer == nullptr)
     return ReturnInvalidRegisterNameArgHolder(register_string);
 
-  double double_return_val = 0;
+  double double_return_val = 0.0l;
   memcpy(&double_return_val, address_pointer, sizeof(double));
   return CreateDoubleArgHolder(double_return_val);
 }
@@ -738,7 +733,6 @@ ArgHolder* WriteBytesToRegister(ScriptContext* current_script, std::vector<ArgHo
       u8 curr_u8 = static_cast<u8>(curr_byte);
       memcpy(address_pointer + i, &curr_u8, sizeof(u8));
     }
-    i++;
   }
 
   return CreateVoidTypeArgHolder();
