@@ -1,6 +1,7 @@
 #include "Core/Scripting/InternalAPIModules/StatisticsAPI.h"
 
 #include "Core/HW/Memmap.h"
+#include "Core/Movie.h"
 #include "Core/Scripting/HelperClasses/VersionResolver.h"
 #include "Core/System.h"
 
@@ -32,8 +33,8 @@ static std::array all_statistics_functions_metadata_list = {
                      Scripting::ArgTypeEnum::S64, {}),
     FunctionMetadata("getTotalLagCount", "1.0", "getTotalLagCount()", GetTotalLagCount,
                      Scripting::ArgTypeEnum::S64, {}),
-    FunctionMetadata("getRAMSize", "1.0", "getRAMSize()", GetRAMSize,
-                     Scripting::ArgTypeEnum::U32, {}),
+    FunctionMetadata("getRAMSize", "1.0", "getRAMSize()", GetRAMSize, Scripting::ArgTypeEnum::U32,
+                     {}),
     FunctionMetadata("getL1CacheSize", "1.0", "getL1CacheSize()", GetL1CacheSize,
                      Scripting::ArgTypeEnum::U32, {}),
     FunctionMetadata("getFakeVMemSize", "1.0", "getFakeVMemSize()", GetFakeVMemSize,
