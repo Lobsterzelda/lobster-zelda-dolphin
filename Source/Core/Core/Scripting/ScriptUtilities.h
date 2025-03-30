@@ -39,13 +39,10 @@ void PushScriptCreateQueueEvent(
 
 void PushScriptStopQueueEvent(const ScriptQueueEventTypes event_type, const int script_identifier);
 
-void ProcessScriptQueueEvents();  // This function executes
-                                  // the events in the queue
-                                  // of script events in the
-                                  // order that they were
-                                  // triggered.
-// This includes the events to start and stop scripts from the UI, as well as the
+// This function executes the events in the queue of script events in the order that they were
+// triggered. This includes the events to start and stop scripts from the UI, as well as the
 // script-end-callback function being called from the script (which is another event)
+void ProcessScriptQueueEvents();
 
 bool StartScripts();
 bool RunGlobalCode();
