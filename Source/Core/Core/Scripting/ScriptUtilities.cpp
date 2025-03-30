@@ -73,6 +73,8 @@ static std::unordered_map<std::string, Common::DynamicLibrary*> file_extension_t
     std::unordered_map<std::string, Common::DynamicLibrary*>();
 static std::vector<Common::DynamicLibrary*> all_dlls = std::vector<Common::DynamicLibrary*>();
 
+static u64 size_of_function_pointer = sizeof(argHolder_apis.AddByteToBytesArgHolder);
+
 // Validates that there's no NULL variables in the API struct passed in as an argument.
 static bool ValidateApiStruct(void* start_of_struct, unsigned int struct_size,
                               const char* struct_name)
@@ -90,7 +92,7 @@ static bool ValidateApiStruct(void* start_of_struct, unsigned int struct_size,
       return false;
 #endif
     }
-    travel_ptr = (u64*)(((u8*)travel_ptr) + sizeof(u64));
+    travel_ptr = (u64*)(((u8*)travel_ptr) + size_of_function_pointer);
   }
 
   std::cout << "All good in " << struct_name << "!" << std::endl;
